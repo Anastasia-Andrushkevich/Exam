@@ -10,7 +10,13 @@
   font-family: "RW Dewi", "Montserrat", sans-serif;
 }
 
-header {
+.header {
+  position: relative;
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,13 +27,12 @@ header {
   position: fixed;
   top: 0;
   z-index: 10000;
-  width: 100%;
 }
-header .logo {
+.header header .logo {
   display: flex;
   align-items: center;
 }
-header .menu ul {
+.header header .menu ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -36,17 +41,26 @@ header .menu ul {
   font-size: 18px;
   font-weight: 600;
 }
-header .menu ul a {
+.header header .menu ul a {
   text-decoration: none;
   color: var(--main-tx-color);
 }
-header .application a {
+.header header .application a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
   font-weight: 700;
 }
 
+main {
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  position: relative;
+}
 .title .title_img {
   position: relative;
   width: 100%;
@@ -58,16 +72,10 @@ header .application a {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
-  opacity: 0.4;
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.11) 0%, rgba(0, 0, 0, 0.0666666667) 100%);
 }
 .title .title-background .tittle-content {
   text-align: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
 }
 .title .title-background .tittle-content h1 {
   color: var(--main-tx-color);
@@ -115,18 +123,21 @@ header .application a {
   backdrop-filter: blur(2px);
 }
 
+.about {
+  position: relative;
+  margin-top: 0;
+}
 .about .about_img {
   position: relative;
 }
 .about .about_items {
   position: absolute;
-  top: 769px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
-  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.0666666667);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 552px 695px;
   grid-template-rows: 1fr 1fr;
   column-gap: 96px;
   row-gap: 129px;
@@ -156,7 +167,7 @@ header .application a {
   opacity: 0.6;
   padding-top: 34px;
 }
-.about .about_items p li {
+.about .about_items p ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
@@ -164,7 +175,7 @@ header .application a {
   padding-top: 34px;
   list-style-type: none;
 }
-.about .about_items p li::before {
+.about .about_items p ul::before {
   color: #00BF63;
   content: "•";
   padding-right: 23px;
