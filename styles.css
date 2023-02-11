@@ -139,46 +139,80 @@ main {
   display: grid;
   grid-template-columns: 552px 695px;
   grid-template-rows: 1fr 1fr;
-  column-gap: 96px;
+  column-gap: 33px;
   row-gap: 129px;
-  padding: 45px 45px 117px 168px;
+  padding: 45px 45px 117px 108px;
 }
-.about .about_items img {
-  background: transparent;
+.about .about_items .about_items_discrip {
+  padding-left: 55px;
 }
-.about .about_items h2 {
+.about .about_items .about_items_discrip h2 {
   color: var(--main-tx-color);
   font-size: 45px;
   font-weight: 700;
   font-family: "RW Dewi", sans-serif;
   padding-top: 160px;
 }
-.about .about_items h3 {
+.about .about_items .about_items_discrip h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
   font-family: "RW Dewi", sans-serif;
   padding-top: 23px;
 }
-.about .about_items p {
+.about .about_items .about_items_discrip p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
   opacity: 0.6;
   padding-top: 34px;
 }
-.about .about_items p ul {
+.about .about_items .about_items_content h3 {
+  color: var(--main-tx-color);
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "RW Dewi", sans-serif;
+  padding-top: 23px;
+}
+.about .about_items .about_items_content ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
   opacity: 0.6;
-  padding-top: 34px;
   list-style-type: none;
 }
-.about .about_items p ul::before {
+.about .about_items .about_items_content ul li {
+  padding-top: 34px;
+}
+.about .about_items .about_items_content ul li::before {
   color: #00BF63;
-  content: "•";
-  padding-right: 23px;
+  content: " ●";
+  text-align: center;
+  padding-right: 13px;
+}
+.about .about_items .about_items_content .about_items_content_btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  margin-top: 67px;
+  align-items: center;
+}
+.about .about_items .about_items_content .about_items_content_btn button {
+  padding: 13px 21px;
+  color: var(--main-tx-color);
+  font-size: 16px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+  border: 2px solid;
+  border-image-source: linear-gradient(165.4deg, #FFFFFF -10.07%, rgba(255, 255, 255, 0) 89.61%);
+  border-radius: 20px;
+}
+.about .about_items .about_items_content .about_items_content_btn a {
+  text-decoration: none;
+  color: var(--main-tx-color);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded, sans-serif";
 }
 
 /*# sourceMappingURL=styles.css.map */
