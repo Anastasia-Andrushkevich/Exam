@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'RW Dewi','Montserrat', sans-serif;
+    font-family: 'RW Dewi', sans-serif;
 }
 
 .header{
@@ -61,7 +61,7 @@ main{
     width: 1450px;
     margin-left: auto;
     margin-right: auto;
-}
+
 .title{
     position: relative;
     .title_img{
@@ -72,12 +72,13 @@ main{
     
     .title-background{  
          
-        padding: 276px 66px 6px 67px;
+        padding: 276px 66px 0px 67px;
+        margin-bottom: 0px;
         position: absolute;
         top: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, rgba(30, 30, 30, 0.11) 0%, #00000011 100%);
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.5) 0%, #00000011 100%);
         
             .tittle-content{
                 text-align: center;
@@ -143,14 +144,14 @@ main{
         top: 0px;
         width: 100%;
         height: 100%;
-        background: #00000011;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
         display: grid;
         grid-template-columns: 552px 695px;
         grid-template-rows: 1fr 1fr;
         column-gap: 33px;
         row-gap: 129px;
         padding: 45px 45px 117px 108px;
-        .about_items_discrip{
+        .about_items_descrip{
             padding-left: 55px;
             h2{
                 color: var(--main-tx-color);
@@ -228,3 +229,148 @@ main{
         }
     }
 }
+.advantages{
+    position: relative;
+    margin-top: 0;
+    .advantages_background{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+        
+    .advantages_descrip{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            color: var(--main-tx-color);
+            font-size: 45px;
+            padding-top: 66px;
+            font-family: 'RF Dewi Expanded, sans-serif';
+        }
+        .advantages_descrip_content{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(6px);
+            border-radius: 42px;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 220px);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 116px;
+            row-gap: 48px;
+            align-items: center;
+            padding: 54px 40px 50px 39px;
+            .advantages_descrip_content_item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .img_first_row{
+                    width: 64px;
+                    height: 64px;
+                    background: #2BE3A0;
+                    box-shadow: 0px 17px 17px rgba(43, 227, 160, 0.28);
+                    border-radius: 12px;
+                    text-align: center;
+                    line-height: 64px;
+                    vertical-align: baseline;
+                    padding-top: 15px;
+                }
+                .img_two_row{
+                    width: 64px;
+                    height: 64px;
+                    background: #FFBF44;
+                    box-shadow: 0px 17px 17px rgba(255, 191, 67, 0.28);
+                    border-radius: 12px;
+                    text-align: center;
+                    line-height: 64px;
+                    vertical-align: baseline;
+                    padding-top: 15px;
+                }
+                p{
+                    padding-top: 18px;  
+                    color: var(--main-tx-color);
+                    font-size: 16px;
+                    font-family: 'RF Dewi Expanded, sans-serif';
+                    text-align: center;
+                }
+                
+            }
+        }
+        
+    }
+    }
+}
+.reviews{
+    position: relative;
+    margin-top: 0;
+    .reviews_background{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+        .reviews_background_descrip{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                color: var(--main-tx-color);
+                font-size: 45px;
+                padding-top: 66px;
+                font-family: 'RF Dewi Expanded, sans-serif';
+            }
+            .reviews_background_descrip_contain{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(2px);
+                border-radius: 61px;
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 80px;
+                padding: 68px 170px 50px 68px;
+                .reviews_background_descrip_contain_img{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .photo{
+                        border-radius: 40px;
+                        margin-bottom: 24px;
+                    }
+                    .nav_arrow{
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        gap: 22px;
+                    }
+                }
+                .reviews_background_descrip_contain_content{
+                    p{
+                        padding-top: 37px;  
+                        color: var(--main-tx-color);
+                        font-size: 16px;
+                        font-family: 'RF Dewi Expanded, sans-serif';
+                        max-width: 443px;
+                        line-height: 131%;
+                    }
+                    h4{
+                        padding-top: 34px;
+                        color: var(--main-tx-color);
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: 'RF Dewi Expanded, sans-serif';
+                    }
+                    h5{
+                        padding-top: 6px;
+                        color: var(--main-tx-color);
+                        font-size: 18px;
+                        font-weight: 600;
+                        opacity: 0.5;
+                        font-family: 'RF Dewi Expanded, sans-serif';
+                    }
+                }
+            }
+        }
+    }
+}
+/*закрывающая для main желтая*/}
