@@ -25,6 +25,7 @@
   padding: 44px 130px;
   backdrop-filter: blur(2px);
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 10000;
 }
@@ -60,11 +61,11 @@ main {
 }
 main .title {
   position: relative;
-}
-main .title .title_img {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  /*.title_img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }*/
 }
 main .title .title-background {
   padding: 276px 66px 0px 67px;
@@ -126,9 +127,6 @@ main .title .title-background .tittle-content .img_chat img {
 main .about {
   position: relative;
   margin-top: 0;
-}
-main .about .about_img {
-  position: relative;
 }
 main .about .about_items {
   position: absolute;
@@ -352,6 +350,116 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   font-weight: 600;
   opacity: 0.5;
   font-family: "RF Dewi Expanded, sans-serif";
+}
+main .requirements {
+  position: relative;
+  margin-top: 0;
+}
+main .requirements .requirements_background {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+main .requirements .requirements_background .requirements_background_descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .requirements .requirements_background .requirements_background_descrip h2 {
+  color: var(--main-tx-color);
+  font-size: 45px;
+  padding-top: 66px;
+  font-family: "RF Dewi Expanded, sans-serif";
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain {
+  display: grid;
+  grid-template-columns: repeat(2, 620px);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 116px;
+  margin: 85px 170px 108px 68px;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img {
+  max-width: 620px;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .background {
+  position: relative;
+  top: 0px;
+  left: 129px;
+  z-index: 10;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .audi {
+  position: absolute;
+  top: 205px;
+  left: 132px;
+  z-index: 11;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list {
+  margin-bottom: 44px;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list ul {
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-family: "RW Dewi", sans-serif;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list ul li {
+  padding-top: 34px;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list ul li::before {
+  color: #00BF63;
+  content: " ●";
+  text-align: center;
+  padding-right: 13px;
+}
+main .requirements .requirements_background .requirements_background_join_fond {
+  position: absolute;
+  top: 637px;
+  bottom: 197px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
+  opacity: 0.67;
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 80px;
+  padding: 86px 189px 86px 132px;
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content {
+  max-width: 736px;
+  padding: 0;
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content h2 {
+  color: var(--main-tx-color);
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded, sans-serif";
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content p {
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "RF Dewi Expanded, sans-serif";
+  opacity: 0.6;
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit input[type=text] {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  padding: 15px 0px 16px 210px;
+  margin-bottom: 18px;
+  border: 0;
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit input[type=tel] {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  padding: 15px 54px 16px 75px;
+  margin-bottom: 18px;
+  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
