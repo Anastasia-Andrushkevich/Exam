@@ -10,26 +10,27 @@
 }
 
 .header{
-    position: relative;
-    width: 1450px;
-    margin-left: auto;
-    margin-right: auto;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
+            linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(2px);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
         header{
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
-            linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-            padding: 44px 130px;
-            backdrop-filter: blur(2px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 10000;
+            width: 1450px;
+            margin-top: -153px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 44px 137px;
                 .logo{
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
+                    gap: 20px;  
                 }
                 .menu{
                     ul{
@@ -62,13 +63,7 @@ main{
     margin-right: auto;
 
 .title{
-    position: relative;
-    /*.title_img{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }*/
-    
+    position: relative;    
     .title-background{  
          
         padding: 276px 66px 0px 67px;
@@ -79,7 +74,7 @@ main{
         height: 100%;
         background: linear-gradient(180deg, rgba(30, 30, 30, 0.5) 0%, #00000011 100%);
         
-            .tittle-content{
+            .title_content{
                 text-align: center;
                 
                 h1{
@@ -392,7 +387,7 @@ main{
                 display: grid;
                 grid-template-columns: repeat(2, 620px);
                 grid-template-rows: repeat(1, 1fr);
-                column-gap: 116px;
+                column-gap: 250px;
                 
                 margin: 85px 170px 108px 68px;
                 .requirements_background_descrip_contain_img{
@@ -400,7 +395,7 @@ main{
                     .background{
                         position: relative;
                         top: 0px;
-                        left: 129px;
+                        left: 210px;
                         z-index: 10;
                     }
                     .audi{
@@ -433,8 +428,7 @@ main{
         }
         .requirements_background_join_fond{
             position: absolute;
-            top: 637px;
-            bottom: 197px;
+            margin-top: -352px;
             width: 100%;
             background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
             opacity: 0.67;
@@ -443,8 +437,8 @@ main{
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                gap:80px;
-                padding: 86px 189px 86px 132px;
+                gap:16px;
+                padding: 86px 132px;
                 .contain_content{
                     max-width: 736px;
                     padding: 0;
@@ -460,13 +454,15 @@ main{
                         font-weight: 600;
                         font-family: 'RF Dewi Expanded, sans-serif';
                         opacity: 0.6;
+                        margin-top: 27px;
                     }
                 }
                 .containt_submit{
+                    form{
                     input[type="text"]{
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
                         backdrop-filter: blur(2px);
-                        padding: 15px 0px 16px 210px;
+                        padding: 15px 95px 16px 34px;
                         margin-bottom: 18px;
                         border: 0;
                     }
@@ -477,9 +473,163 @@ main{
                         margin-bottom: 18px;
                         border: 0;
                     }
+                    input[type="submit"]{
+                        padding: 16px 85px;
+                        max-width: 343px;
+                        border: 0;
+                        font-size: 16px;
+                        font-weight: 700;
+                        background-color: #FFFFFF;
+                        font-family: 'RF Dewi Expanded, sans-serif';
+                        
+                    }
+                    }
                 }
+            }
+        }
+        .requirements_background_map{
+            h2{
+                color: var(--main-tx-color);
+                font-size: 36px;
+                font-weight: 700;
+                font-family: 'RF Dewi Expanded, sans-serif';
+                text-align: center;
+                margin-top: 114px;
+                margin-bottom: 32px;
             }
         }
     }
 }
+.contacts{
+    position: relative;
+    margin-top: 0;
+    .contacts_background{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+        padding: 48px 116px 76px 132px;
+        .contacts_background_header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            h2{
+                color: var(--main-tx-color);
+                font-size: 45px;
+                font-weight: 700;
+                font-family: 'RF Dewi Expanded, sans-serif';
+            }
+            p{
+                color: var(--main-tx-color);
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'RF Dewi Expanded, sans-serif';
+                opacity: 0.4;
+                margin-top: 27px;
+            }
+            img{
+                margin-top: -16px;
+            }
+        }
+        .contacts_background_connect{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 305px;
+            row-gap: 8px;
+            margin-top: 71px;
+            color: var(--main-tx-color);
+            font-family: 'RF Dewi Expanded';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            .comments{
+                font-size: 16px;
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
 /*закрывающая для main желтая*/}
+footer{
+    background: #1E1E1E;
+    width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 62px 109px 58px 132px;
+    .footer_header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 47px;
+        .footer_header_menu{
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 32px;
+                font-size: 18px;
+                font-weight: 600;
+                a{
+                    text-decoration: none;
+                    color: var(--main-tx-color);
+                }
+            }
+        }
+        .footer_header_logo{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;  
+        }
+    }
+    .footer_extra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .footer_extra_network{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            p{
+                color: var(--main-tx-color);
+                font-family: 'RF Dewi';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                opacity: 0.4;
+                margin-right: 20px;
+                margin-top: 9px;
+            }
+            .footer_extra_network_img{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+        .footer_extra_documents{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            p{
+                color: var(--main-tx-color);
+                font-family: 'RF Dewi';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                opacity: 0.4;
+            }       
+        }
+    }
+}

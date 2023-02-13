@@ -11,27 +11,28 @@
 }
 
 .header {
-  position: relative;
-  width: 1450px;
-  margin-left: auto;
-  margin-right: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(2px);
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 .header header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  padding: 44px 130px;
-  backdrop-filter: blur(2px);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10000;
+  width: 1450px;
+  margin-top: -153px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 44px 137px;
 }
 .header header .logo {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .header header .menu ul {
   list-style: none;
@@ -61,11 +62,6 @@ main {
 }
 main .title {
   position: relative;
-  /*.title_img{
-      position: relative;
-      width: 100%;
-      height: 100%;
-  }*/
 }
 main .title .title-background {
   padding: 276px 66px 0px 67px;
@@ -76,28 +72,28 @@ main .title .title-background {
   height: 100%;
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.5) 0%, rgba(0, 0, 0, 0.0666666667) 100%);
 }
-main .title .title-background .tittle-content {
+main .title .title-background .title_content {
   text-align: center;
 }
-main .title .title-background .tittle-content h1 {
+main .title .title-background .title_content h1 {
   color: var(--main-tx-color);
   font-size: 45px;
   font-weight: 700;
 }
-main .title .title-background .tittle-content p {
+main .title .title-background .title_content p {
   color: var(--main-tx-color);
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
 }
-main .title .title-background .tittle-content .title_btn {
+main .title .title-background .title_content .title_btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 66px;
 }
-main .title .title-background .tittle-content .title_btn .btn_applicat {
+main .title .title-background .title_content .title_btn .btn_applicat {
   padding: 17px 29px;
   max-width: 260px;
   border: 0;
@@ -106,21 +102,21 @@ main .title .title-background .tittle-content .title_btn .btn_applicat {
   background-color: #FFFFFF;
   font-family: "RF Dewi Expanded, sans-serif";
 }
-main .title .title-background .tittle-content .title_btn a {
+main .title .title-background .title_content .title_btn a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
   font-weight: 700;
   font-family: "RF Dewi Expanded, sans-serif";
 }
-main .title .title-background .tittle-content .img_chat {
+main .title .title-background .title_content .img_chat {
   display: flex;
   max-width: 1450px;
   align-items: flex-end;
   margin-top: 77px;
   margin-bottom: 60px;
 }
-main .title .title-background .tittle-content .img_chat img {
+main .title .title-background .title_content .img_chat img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
 }
@@ -377,7 +373,7 @@ main .requirements .requirements_background .requirements_background_descrip .re
   display: grid;
   grid-template-columns: repeat(2, 620px);
   grid-template-rows: repeat(1, 1fr);
-  column-gap: 116px;
+  column-gap: 250px;
   margin: 85px 170px 108px 68px;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img {
@@ -386,7 +382,7 @@ main .requirements .requirements_background .requirements_background_descrip .re
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .background {
   position: relative;
   top: 0px;
-  left: 129px;
+  left: 210px;
   z-index: 10;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .audi {
@@ -416,8 +412,7 @@ main .requirements .requirements_background .requirements_background_descrip .re
 }
 main .requirements .requirements_background .requirements_background_join_fond {
   position: absolute;
-  top: 637px;
-  bottom: 197px;
+  margin-top: -352px;
   width: 100%;
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
   opacity: 0.67;
@@ -427,8 +422,8 @@ main .requirements .requirements_background .requirements_background_join_fond .
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 80px;
-  padding: 86px 189px 86px 132px;
+  gap: 16px;
+  padding: 86px 132px;
 }
 main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content {
   max-width: 736px;
@@ -446,20 +441,168 @@ main .requirements .requirements_background .requirements_background_join_fond .
   font-weight: 600;
   font-family: "RF Dewi Expanded, sans-serif";
   opacity: 0.6;
+  margin-top: 27px;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit input[type=text] {
+main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit form input[type=text] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
-  padding: 15px 0px 16px 210px;
+  padding: 15px 95px 16px 34px;
   margin-bottom: 18px;
   border: 0;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit input[type=tel] {
+main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit form input[type=tel] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   padding: 15px 54px 16px 75px;
   margin-bottom: 18px;
   border: 0;
+}
+main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit form input[type=submit] {
+  padding: 16px 85px;
+  max-width: 343px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  font-family: "RF Dewi Expanded, sans-serif";
+}
+main .requirements .requirements_background .requirements_background_map h2 {
+  color: var(--main-tx-color);
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded, sans-serif";
+  text-align: center;
+  margin-top: 114px;
+  margin-bottom: 32px;
+}
+main .contacts {
+  position: relative;
+  margin-top: 0;
+}
+main .contacts .contacts_background {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  padding: 48px 116px 76px 132px;
+}
+main .contacts .contacts_background .contacts_background_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .contacts .contacts_background .contacts_background_header h2 {
+  color: var(--main-tx-color);
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded, sans-serif";
+}
+main .contacts .contacts_background .contacts_background_header p {
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "RF Dewi Expanded, sans-serif";
+  opacity: 0.4;
+  margin-top: 27px;
+}
+main .contacts .contacts_background .contacts_background_header img {
+  margin-top: -16px;
+}
+main .contacts .contacts_background .contacts_background_connect {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 305px;
+  row-gap: 8px;
+  margin-top: 71px;
+  color: var(--main-tx-color);
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+main .contacts .contacts_background .contacts_background_connect .comments {
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+footer {
+  background: #1E1E1E;
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 62px 109px 58px 132px;
+}
+footer .footer_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 47px;
+}
+footer .footer_header .footer_header_menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .footer_header .footer_header_menu ul a {
+  text-decoration: none;
+  color: var(--main-tx-color);
+}
+footer .footer_header .footer_header_logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .footer_extra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_extra .footer_extra_network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer_extra .footer_extra_network p {
+  color: var(--main-tx-color);
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.4;
+  margin-right: 20px;
+  margin-top: 9px;
+}
+footer .footer_extra .footer_extra_network .footer_extra_network_img {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .footer_extra .footer_extra_documents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+footer .footer_extra .footer_extra_documents p {
+  color: var(--main-tx-color);
+  font-family: "RF Dewi";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.4;
 }
 
 /*# sourceMappingURL=styles.css.map */
