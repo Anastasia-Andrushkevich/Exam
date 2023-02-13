@@ -100,14 +100,14 @@ main .title .title-background .title_content .title_btn .btn_applicat {
   font-size: 18px;
   font-weight: 700;
   background-color: #FFFFFF;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .title .title-background .title_content .title_btn a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
   font-weight: 700;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .title .title-background .title_content .img_chat {
   display: flex;
@@ -206,7 +206,7 @@ main .about .about_items .about_items_content .about_items_content_btn a {
   color: var(--main-tx-color);
   font-size: 18px;
   font-weight: 700;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .advantages {
   position: relative;
@@ -228,7 +228,7 @@ main .advantages .advantages_background .advantages_descrip h2 {
   color: var(--main-tx-color);
   font-size: 45px;
   padding-top: 66px;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .advantages .advantages_background .advantages_descrip .advantages_descrip_content {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
@@ -274,7 +274,7 @@ main .advantages .advantages_background .advantages_descrip .advantages_descrip_
   padding-top: 18px;
   color: var(--main-tx-color);
   font-size: 16px;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
   text-align: center;
 }
 main .reviews {
@@ -297,7 +297,7 @@ main .reviews .reviews_background .reviews_background_descrip h2 {
   color: var(--main-tx-color);
   font-size: 45px;
   padding-top: 66px;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
@@ -328,7 +328,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   padding-top: 37px;
   color: var(--main-tx-color);
   font-size: 16px;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
   max-width: 443px;
   line-height: 131%;
 }
@@ -337,7 +337,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   color: var(--main-tx-color);
   font-size: 18px;
   font-weight: 700;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_content h5 {
   padding-top: 6px;
@@ -345,7 +345,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   font-size: 18px;
   font-weight: 600;
   opacity: 0.5;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .requirements {
   position: relative;
@@ -367,7 +367,7 @@ main .requirements .requirements_background .requirements_background_descrip h2 
   color: var(--main-tx-color);
   font-size: 45px;
   padding-top: 66px;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain {
   display: grid;
@@ -433,13 +433,13 @@ main .requirements .requirements_background .requirements_background_join_fond .
   color: var(--main-tx-color);
   font-size: 36px;
   font-weight: 700;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-weight: 600;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
   opacity: 0.6;
   margin-top: 27px;
 }
@@ -464,13 +464,13 @@ main .requirements .requirements_background .requirements_background_join_fond .
   font-size: 16px;
   font-weight: 700;
   background-color: #FFFFFF;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .requirements .requirements_background .requirements_background_map h2 {
   color: var(--main-tx-color);
   font-size: 36px;
   font-weight: 700;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
   text-align: center;
   margin-top: 114px;
   margin-bottom: 32px;
@@ -497,13 +497,13 @@ main .contacts .contacts_background .contacts_background_header h2 {
   color: var(--main-tx-color);
   font-size: 45px;
   font-weight: 700;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
 }
 main .contacts .contacts_background .contacts_background_header p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-weight: 600;
-  font-family: "RF Dewi Expanded, sans-serif";
+  font-family: "RF Dewi Expanded", sans-serif;
   opacity: 0.4;
   margin-top: 27px;
 }
@@ -518,7 +518,7 @@ main .contacts .contacts_background .contacts_background_connect {
   row-gap: 8px;
   margin-top: 71px;
   color: var(--main-tx-color);
-  font-family: "RF Dewi Expanded";
+  font-family: "RF Dewi Expanded", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -575,7 +575,7 @@ footer .footer_extra .footer_extra_network {
 }
 footer .footer_extra .footer_extra_network p {
   color: var(--main-tx-color);
-  font-family: "RF Dewi";
+  font-family: "RF Dewi", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -598,7 +598,7 @@ footer .footer_extra .footer_extra_documents {
 }
 footer .footer_extra .footer_extra_documents p {
   color: var(--main-tx-color);
-  font-family: "RF Dewi";
+  font-family: "RF Dewi", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
