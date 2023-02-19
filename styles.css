@@ -55,42 +55,55 @@
 }
 
 main {
-  width: 1450px;
+  max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
   /*закрывающая для main желтая*/
 }
 main .title {
   position: relative;
+  background-image: url("images/main-page/title_background.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1450/763;
 }
 main .title .title-background {
-  padding: 276px 66px 0px 67px;
   margin-bottom: 0px;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.5) 0%, rgba(0, 0, 0, 0.0666666667) 100%);
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%, rgba(0, 0, 0, 0.11) 100%);
 }
 main .title .title-background .title_content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 276px;
 }
 main .title .title-background .title_content h1 {
   color: var(--main-tx-color);
   font-size: 45px;
   font-weight: 700;
+  letter-spacing: 9px;
+  font-family: "RF Dewi", sans-serif;
+  text-align: center;
 }
 main .title .title-background .title_content p {
   color: var(--main-tx-color);
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+  letter-spacing: 1px;
+  font-family: "RF Dewi", sans-serif;
+  text-align: center;
 }
 main .title .title-background .title_content .title_btn {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 60px;
   margin-top: 66px;
 }
 main .title .title-background .title_content .title_btn .btn_applicat {
@@ -101,6 +114,7 @@ main .title .title-background .title_content .title_btn .btn_applicat {
   font-weight: 700;
   background-color: #FFFFFF;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .title .title-background .title_content .title_btn a {
   text-decoration: none;
@@ -108,28 +122,38 @@ main .title .title-background .title_content .title_btn a {
   font-size: 18px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .title .title-background .title_content .img_chat {
   display: flex;
   max-width: 1450px;
-  align-items: flex-end;
+  justify-content: end;
   margin-top: 77px;
   margin-bottom: 60px;
+  margin-right: 46px;
 }
-main .title .title-background .title_content .img_chat img {
+main .title .title-background .title_content .img_chat button {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
 }
 main .about {
   position: relative;
-  margin-top: 0;
+  background-image: url("images/main-page/backgroundimage_about.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1450/1311;
 }
 main .about .about_items {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background-color: rgba(30, 30, 30, 0.7);
   display: grid;
   grid-template-columns: 552px 695px;
   grid-template-rows: 1fr 1fr;
@@ -146,6 +170,7 @@ main .about .about_items .about_items_descrip h2 {
   font-weight: 700;
   font-family: "RW Dewi", sans-serif;
   padding-top: 160px;
+  letter-spacing: 10px;
 }
 main .about .about_items .about_items_descrip h3 {
   color: var(--main-tx-color);
@@ -153,6 +178,9 @@ main .about .about_items .about_items_descrip h3 {
   font-weight: 700;
   font-family: "RW Dewi", sans-serif;
   padding-top: 23px;
+  letter-spacing: 1px;
+  line-height: 31px;
+  max-width: 555px;
 }
 main .about .about_items .about_items_descrip p {
   color: var(--main-tx-color);
@@ -160,6 +188,8 @@ main .about .about_items .about_items_descrip p {
   font-family: "RW Dewi", sans-serif;
   opacity: 0.6;
   padding-top: 34px;
+  letter-spacing: 1px;
+  max-width: 449px;
 }
 main .about .about_items .about_items_content h3 {
   color: var(--main-tx-color);
@@ -167,11 +197,13 @@ main .about .about_items .about_items_content h3 {
   font-weight: 700;
   font-family: "RW Dewi", sans-serif;
   padding-top: 23px;
+  letter-spacing: 1px;
 }
 main .about .about_items .about_items_content ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
+  letter-spacing: 1px;
   opacity: 0.6;
   list-style-type: none;
 }
@@ -196,6 +228,7 @@ main .about .about_items .about_items_content .about_items_content_btn button {
   color: var(--main-tx-color);
   font-size: 16px;
   text-align: center;
+  letter-spacing: 1px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
   border: 2px solid;
   border-image-source: linear-gradient(165.4deg, #FFFFFF -10.07%, rgba(255, 255, 255, 0) 89.61%);
@@ -207,10 +240,15 @@ main .about .about_items .about_items_content .about_items_content_btn a {
   font-size: 18px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .advantages {
   position: relative;
-  margin-top: 0;
+  background-image: url("images/main-page/backgroundimage_advantages.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1450/678;
 }
 main .advantages .advantages_background {
   position: absolute;
@@ -229,57 +267,91 @@ main .advantages .advantages_background .advantages_descrip h2 {
   font-size: 45px;
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .advantages .advantages_background .advantages_descrip .advantages_descrip_content {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
   border-radius: 42px;
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 220px);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 116px;
-  row-gap: 48px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
   align-items: center;
   padding: 54px 40px 50px 39px;
 }
-main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_item {
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_first_row {
+  display: flex;
+  flex-direction: row;
+  gap: 146px;
+  align-items: center;
+  justify-content: center;
+}
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_first_row .advantages_descrip_content_first_row_item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 236px;
 }
-main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_item .img_first_row {
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_first_row .advantages_descrip_content_first_row_item .img_first_row {
   width: 64px;
   height: 64px;
   background: #2BE3A0;
   box-shadow: 0px 17px 17px rgba(43, 227, 160, 0.28);
   border-radius: 12px;
-  text-align: center;
-  line-height: 64px;
-  vertical-align: baseline;
-  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_item .img_two_row {
-  width: 64px;
-  height: 64px;
-  background: #FFBF44;
-  box-shadow: 0px 17px 17px rgba(255, 191, 67, 0.28);
-  border-radius: 12px;
-  text-align: center;
-  line-height: 64px;
-  vertical-align: baseline;
-  padding-top: 15px;
-}
-main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_item p {
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_first_row .advantages_descrip_content_first_row_item p {
   padding-top: 18px;
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RF Dewi Expanded", sans-serif;
   text-align: center;
+  letter-spacing: 1px;
+}
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_two_row {
+  display: flex;
+  flex-direction: row;
+  gap: 116px;
+  align-items: center;
+  justify-content: center;
+}
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_two_row .advantages_descrip_content_two_row_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 265px;
+}
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_two_row .advantages_descrip_content_two_row_item .img_two_row {
+  width: 64px;
+  height: 64px;
+  background: #FFBF44;
+  box-shadow: 0px 17px 17px rgba(255, 191, 67, 0.28);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_two_row .advantages_descrip_content_two_row_item p {
+  padding-top: 18px;
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
 }
 main .reviews {
   position: relative;
-  margin-top: 0;
+  background-image: url("images/main-page/backgroundimage_reviews.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1450/851;
 }
 main .reviews .reviews_background {
   position: absolute;
@@ -298,6 +370,7 @@ main .reviews .reviews_background .reviews_background_descrip h2 {
   font-size: 45px;
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
@@ -329,6 +402,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
   max-width: 443px;
   line-height: 131%;
 }
@@ -338,6 +412,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   font-size: 18px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_content h5 {
   padding-top: 6px;
@@ -346,10 +421,15 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   font-weight: 600;
   opacity: 0.5;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .requirements {
   position: relative;
-  margin-top: 0;
+  background-image: url("images/main-page/backgroundimage_requirements.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1450/1178;
 }
 main .requirements .requirements_background {
   position: absolute;
@@ -368,6 +448,7 @@ main .requirements .requirements_background .requirements_background_descrip h2 
   font-size: 45px;
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain {
   display: grid;
@@ -398,6 +479,7 @@ main .requirements .requirements_background .requirements_background_descrip .re
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
+  letter-spacing: 1px;
   list-style-type: none;
   margin-bottom: 20px;
 }
@@ -410,14 +492,21 @@ main .requirements .requirements_background .requirements_background_descrip .re
   text-align: center;
   padding-right: 13px;
 }
-main .requirements .requirements_background .requirements_background_join_fond {
-  position: absolute;
-  margin-top: -352px;
+main .requirements .requirements_background .requirements_background_join {
+  position: relative;
+  background-image: url("images/main-page/background_join.jpg");
+  max-width: 1450px;
   width: 100%;
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
-  opacity: 0.67;
+  height: auto;
+  aspect-ratio: 1450/348;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
+}
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -425,39 +514,48 @@ main .requirements .requirements_background .requirements_background_join_fond .
   gap: 16px;
   padding: 86px 132px;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content {
   max-width: 736px;
   padding: 0;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content h2 {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content h2 {
   color: var(--main-tx-color);
   font-size: 36px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 4px;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .contain_content p {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-weight: 600;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
   opacity: 0.6;
   margin-top: 27px;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit form input[type=text] {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form {
+  max-width: 343px;
+}
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=text] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
-  padding: 15px 95px 16px 34px;
+  padding: 15px 201px 16px 34px;
   margin-bottom: 18px;
   border: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit form input[type=tel] {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=tel] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
-  padding: 15px 54px 16px 75px;
+  padding: 15px 44px 16px 44px;
   margin-bottom: 18px;
   border: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
-main .requirements .requirements_background .requirements_background_join_fond .contain .containt_submit form input[type=submit] {
+main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=submit] {
   padding: 16px 85px;
   max-width: 343px;
   border: 0;
@@ -465,26 +563,35 @@ main .requirements .requirements_background .requirements_background_join_fond .
   font-weight: 700;
   background-color: #FFFFFF;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  box-sizing: border-box;
 }
 main .requirements .requirements_background .requirements_background_map h2 {
   color: var(--main-tx-color);
   font-size: 36px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
   text-align: center;
   margin-top: 114px;
   margin-bottom: 32px;
 }
 main .contacts {
   position: relative;
-  margin-top: 0;
+  background-image: url("images/main-page/backgroundimage_contacts.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1450/319;
 }
 main .contacts .contacts_background {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
   padding: 48px 116px 76px 132px;
 }
 main .contacts .contacts_background .contacts_background_header {
@@ -498,12 +605,14 @@ main .contacts .contacts_background .contacts_background_header h2 {
   font-size: 45px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
 }
 main .contacts .contacts_background .contacts_background_header p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-weight: 600;
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
   opacity: 0.4;
   margin-top: 27px;
 }
@@ -519,6 +628,7 @@ main .contacts .contacts_background .contacts_background_connect {
   margin-top: 71px;
   color: var(--main-tx-color);
   font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -530,7 +640,7 @@ main .contacts .contacts_background .contacts_background_connect .comments {
 
 footer {
   background: #1E1E1E;
-  width: 1450px;
+  max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
   padding: 62px 109px 58px 132px;
@@ -551,6 +661,8 @@ footer .footer_header .footer_header_menu ul {
   gap: 32px;
   font-size: 18px;
   font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "RF Dewi", sans-serif;
 }
 footer .footer_header .footer_header_menu ul a {
   text-decoration: none;
@@ -576,6 +688,7 @@ footer .footer_extra .footer_extra_network {
 footer .footer_extra .footer_extra_network p {
   color: var(--main-tx-color);
   font-family: "RF Dewi", sans-serif;
+  letter-spacing: 1px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -599,6 +712,7 @@ footer .footer_extra .footer_extra_documents {
 footer .footer_extra .footer_extra_documents p {
   color: var(--main-tx-color);
   font-family: "RF Dewi", sans-serif;
+  letter-spacing: 1px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
