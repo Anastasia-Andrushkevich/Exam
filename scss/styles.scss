@@ -745,5 +745,36 @@ footer{
     }
 }
 @media (max-width:375px){
-   
+    .title{
+        .title-background{  
+            .title_content{
+                margin-top: 176px;         
+                    h1{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    .title_btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 60px;
+                        margin-top: 66px;
+                        .btn_applicat{
+                            padding: 17px 29px;
+                            max-width: 176px;
+                        }
+                        a{
+                            display: none;
+                        }
+                    }
+                    .img_chat{
+                         margin-right: 27px;
+                    }
+                        
+                    }
+            } 
+        }
 }
