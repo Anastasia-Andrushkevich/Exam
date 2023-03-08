@@ -5,10 +5,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 	<title>Cleopartner taxi service</title>
 	<script></script>
 	
 </head>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 <body>
     
     <div class="header">
@@ -54,34 +66,37 @@
 
     <div class="about">
         <div class="about_items">
-            <div> <img src="images/main-page/phone.png" width="507" height="610" alt="картинка телефона" title="работает на мобильном телефоне"> </div>
+            <div class="about_items_1r">
+                <div class="phone"> <img src="images/main-page/phone.png" width="507" height="610" alt="картинка телефона" title="работает на мобильном телефоне"> </div>
             
-            <div class="about_items_descrip">
-                <h2>О нашей компании</h2>
-                <h3>Компания Cleo Partners предлагает Вам комплексное 
-                    сотрудничество на платформах Uber, Bolt, Free Now, Uber Eats, Bolt Food.</h3>
-                <p>С нами уже работают более 2000 довольных водителей по всей Польше, которые
-                     ежедневно зарабатывают.</p>
-            
-            </div>
-            
-            <div class="about_items_content">
-                <h3>Работая с нами Вы сохраняете все преимущества водителя такси</h3>
-                <p>
-                    <ul>
-                        <li>Вы имеете возможность самостоятельно устанавливать <strong>рабочий график</strong> и получать заработанные деньги ежедневно. 
-                        </li>
-                        <li>Всего 4 документа разделяют вас от обычного человека и работника нашей компании. </li>
-                        <li>Работать можно на <strong>собственном или арендованном автомобиле</strong> из нашего автопарка, либо из автопарка 
-                            за пределами компании.</li>
-                    </ul>
-                </p>
-                <div class="about_items_content_btn">
-                    <button>Консультация</button>
-                    <a href="#">Узнать больше</a>
+                <div class="about_items_1r_descrip">
+                    <h2>О нашей компании</h2>
+                    <h3>Компания Cleo Partners предлагает Вам комплексное 
+                        сотрудничество на платформах Uber, Bolt, Free Now, Uber Eats, Bolt Food.</h3>
+                    <p>С нами уже работают более 2000 довольных водителей по всей Польше, которые
+                        ежедневно зарабатывают.</p>
+                
                 </div>
             </div>
-            <div> <img src="images/main-page/macbook-pro.png" width="694" height="413" alt="карта в ноутбуке" title="работает на ноутбуке"> </div>
+            <div class="about_items_2r">
+                <div class="about_items_2r_content">
+                    <h3>Работая с нами Вы сохраняете все преимущества водителя такси</h3>
+                    <p>
+                        <ul>
+                            <li>Вы имеете возможность самостоятельно устанавливать <strong>рабочий график</strong> и получать заработанные деньги ежедневно. 
+                            </li>
+                            <li>Всего 4 документа разделяют вас от обычного человека и работника нашей компании. </li>
+                            <li>Работать можно на <strong>собственном или арендованном автомобиле</strong> из нашего автопарка, либо из автопарка 
+                                за пределами компании.</li>
+                        </ul>
+                    </p>
+                    <div class="about_items_content_btn">
+                        <button>Консультация</button>
+                        <a href="#">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="laptop"> <img src="images/main-page/macbook-pro.png" width="694" height="413" alt="карта в ноутбуке" title="работает на ноутбуке"> </div>
+            </div>
         </div>
     </div>
 
@@ -165,10 +180,10 @@
                 <h2>Требования к автомобилю</h2>
                 <div class="requirements_background_descrip_contain">
                     <div class="requirements_background_descrip_contain_img">
-                        <img class="background" src="images/main-page/background_audi.png" width="322" height="322"
-                         alt="планета" title="планета">
-                        <img class="audi" src="images/main-page/audi-uber.png" width="601" height="394" 
+                        <img class="background" src="images/main-page/background_audi.png" width="322" height="322" 
                         alt="требование к автомобилю" title="требование к автомобилю">
+                        <img class="audi" src="images/main-page/audi-uber.png" width="601" height="394" 
+                        alt="планета" title="планета">
                     </div>
                     <div class="requirements_background_descrip_contain_content">
                         <div class="requirements_background_descrip_contain_content_list">
@@ -200,7 +215,8 @@
                         <div class="containt_submit">
                             <form>
                             <p><input type="text" id="name_input" name="name" placeholder="Ваше имя"></p>
-                            <p><input type="tel" id="tel_input" name="tel" placeholder="+48 (99) 999-99-99"></p>
+                            <p><input type="tel" id="phone" name="phone" placeholder="+48 (99) 999-99-99"></p>
+                            <!---->
                             <input type="submit"  value="Оставить заявку">
                             </form>
                         </div>
@@ -209,6 +225,12 @@
             </div>    
             <div class="requirements_background_map">
                 <h2>Мы уже работаем в таких городах:</h2>
+                <div class="map-container">
+                    <div class="map-overlay"></div>
+                    <div class="map-here">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sw6XSxTHHixrlyBPWUqy3JXlEGwXsCA&ehbc=2E312F" width="1450" height="500"></iframe>
+                    </div>
+                </div>
             </div>
             
         </div>

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   --main-tx-color: #FFFFFF;
+  --main-bold-size: 45px;
 }
 
 * {
@@ -63,27 +64,25 @@ main {
 main .title {
   position: relative;
   background-image: url("images/main-page/title_background.jpg");
+  background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/763;
+  /*aspect-ratio: 1450/763;*/
+  object-fit: contain;
 }
 main .title .title-background {
-  margin-bottom: 0px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%, rgba(0, 0, 0, 0.11) 100%);
 }
 main .title .title-background .title_content {
   display: flex;
   flex-direction: column;
-  margin-top: 276px;
+  box-sizing: border-box;
+  padding-top: 275px;
 }
 main .title .title-background .title_content h1 {
   color: var(--main-tx-color);
-  font-size: 45px;
+  font-size: var(--main-bold-size);
   font-weight: 700;
   letter-spacing: 9px;
   font-family: "RF Dewi", sans-serif;
@@ -129,12 +128,12 @@ main .title .title-background .title_content .img_chat {
   max-width: 1450px;
   justify-content: end;
   margin-top: 77px;
-  margin-bottom: 60px;
   margin-right: 46px;
+  margin-bottom: 60px;
 }
 main .title .title-background .title_content .img_chat button {
-  width: 85px;
-  height: 85px;
+  width: 83px;
+  height: 83px;
   border-radius: 50%;
   border: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
@@ -143,28 +142,36 @@ main .title .title-background .title_content .img_chat button {
 main .about {
   position: relative;
   background-image: url("images/main-page/backgroundimage_about.jpg");
+  background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/1311;
+  /*aspect-ratio: 1450/1311;*/
+  object-fit: contain;
 }
 main .about .about_items {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
   background-color: rgba(30, 30, 30, 0.7);
-  display: grid;
-  grid-template-columns: 552px 695px;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 33px;
-  row-gap: 129px;
-  padding: 45px 45px 117px 108px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 129px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 45px 0px 96px 0px;
 }
-main .about .about_items .about_items_descrip {
-  padding-left: 55px;
+main .about .about_items .about_items_1r {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 96px;
 }
-main .about .about_items .about_items_descrip h2 {
+main .about .about_items .about_items_1r .phone {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+main .about .about_items .about_items_1r .about_items_1r_descrip h2 {
   color: var(--main-tx-color);
   font-size: 45px;
   font-weight: 700;
@@ -172,7 +179,7 @@ main .about .about_items .about_items_descrip h2 {
   padding-top: 160px;
   letter-spacing: 10px;
 }
-main .about .about_items .about_items_descrip h3 {
+main .about .about_items .about_items_1r .about_items_1r_descrip h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
@@ -182,7 +189,7 @@ main .about .about_items .about_items_descrip h3 {
   line-height: 31px;
   max-width: 555px;
 }
-main .about .about_items .about_items_descrip p {
+main .about .about_items .about_items_1r .about_items_1r_descrip p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
@@ -191,7 +198,16 @@ main .about .about_items .about_items_descrip p {
   letter-spacing: 1px;
   max-width: 449px;
 }
-main .about .about_items .about_items_content h3 {
+main .about .about_items .about_items_2r {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+main .about .about_items .about_items_2r .about_items_2r_content {
+  max-width: 567px;
+}
+main .about .about_items .about_items_2r .about_items_2r_content h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
@@ -199,7 +215,7 @@ main .about .about_items .about_items_content h3 {
   padding-top: 23px;
   letter-spacing: 1px;
 }
-main .about .about_items .about_items_content ul {
+main .about .about_items .about_items_2r .about_items_2r_content ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
@@ -207,34 +223,35 @@ main .about .about_items .about_items_content ul {
   opacity: 0.6;
   list-style-type: none;
 }
-main .about .about_items .about_items_content ul li {
+main .about .about_items .about_items_2r .about_items_2r_content ul li {
   padding-top: 34px;
 }
-main .about .about_items .about_items_content ul li::before {
+main .about .about_items .about_items_2r .about_items_2r_content ul li::before {
   color: #00BF63;
   content: " ●";
   text-align: center;
   padding-right: 13px;
 }
-main .about .about_items .about_items_content .about_items_content_btn {
+main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn {
   display: flex;
   flex-wrap: wrap;
   gap: 38px;
   margin-top: 67px;
   align-items: center;
 }
-main .about .about_items .about_items_content .about_items_content_btn button {
+main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn button {
   padding: 13px 21px;
   color: var(--main-tx-color);
   font-size: 16px;
   text-align: center;
   letter-spacing: 1px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
-  border: 2px solid;
-  border-image-source: linear-gradient(165.4deg, #FFFFFF -10.07%, rgba(255, 255, 255, 0) 89.61%);
+  border: 2px solid #FFFFFF;
+  border-image: linear-gradient(#FFFFFF, rgba(255, 255, 255, 0));
+  border-image-slice: 10;
   border-radius: 20px;
 }
-main .about .about_items .about_items_content .about_items_content_btn a {
+main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
@@ -242,29 +259,34 @@ main .about .about_items .about_items_content .about_items_content_btn a {
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
+main .about .about_items .about_items_2r .laptop {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
 main .advantages {
   position: relative;
   background-image: url("images/main-page/backgroundimage_advantages.jpg");
+  background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/678;
+  /*aspect-ratio: 1450/678;*/
+  object-fit: contain;
 }
 main .advantages .advantages_background {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
 main .advantages .advantages_background .advantages_descrip {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 105px;
 }
 main .advantages .advantages_background .advantages_descrip h2 {
   color: var(--main-tx-color);
-  font-size: 45px;
+  font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
@@ -348,26 +370,26 @@ main .advantages .advantages_background .advantages_descrip .advantages_descrip_
 main .reviews {
   position: relative;
   background-image: url("images/main-page/backgroundimage_reviews.jpg");
+  background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/851;
+  /*aspect-ratio: 1450/851;*/
+  object-fit: contain;
 }
 main .reviews .reviews_background {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
 main .reviews .reviews_background .reviews_background_descrip {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 138px;
 }
 main .reviews .reviews_background .reviews_background_descrip h2 {
   color: var(--main-tx-color);
-  font-size: 45px;
+  font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
@@ -381,7 +403,8 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   flex-direction: row;
   flex-wrap: wrap;
   gap: 80px;
-  padding: 68px 170px 50px 68px;
+  box-sizing: border-box;
+  padding: 68px 170px 50px 60px;
 }
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img {
   display: flex;
@@ -391,6 +414,9 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .photo {
   border-radius: 40px;
   margin-bottom: 24px;
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .nav_arrow {
   display: inline-flex;
@@ -426,16 +452,14 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
 main .requirements {
   position: relative;
   background-image: url("images/main-page/backgroundimage_requirements.jpg");
+  background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/1178;
+  /*aspect-ratio: 1450/1178;*/
+  object-fit: contain;
 }
 main .requirements .requirements_background {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
 main .requirements .requirements_background .requirements_background_descrip {
@@ -445,37 +469,51 @@ main .requirements .requirements_background .requirements_background_descrip {
 }
 main .requirements .requirements_background .requirements_background_descrip h2 {
   color: var(--main-tx-color);
-  font-size: 45px;
+  font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain {
-  display: grid;
-  grid-template-columns: repeat(2, 620px);
-  grid-template-rows: repeat(1, 1fr);
-  column-gap: 250px;
-  margin: 85px 170px 108px 68px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 85px 0px 29px 68px;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img {
-  max-width: 620px;
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .background {
   position: relative;
   top: 0px;
-  left: 210px;
+  left: -3%;
   z-index: 10;
+  max-width: 55%;
+  height: auto;
 }
 main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .audi {
   position: absolute;
-  top: 205px;
-  left: 132px;
+  max-width: 100%;
+  height: auto;
+  left: 0;
   z-index: 11;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list {
-  margin-bottom: 44px;
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 44px;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list ul {
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list {
+  margin-top: 0;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
@@ -483,14 +521,20 @@ main .requirements .requirements_background .requirements_background_descrip .re
   list-style-type: none;
   margin-bottom: 20px;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list ul li {
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list ul li {
   padding-top: 34px;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content_list ul li::before {
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list ul li::before {
   color: #00BF63;
   content: " ●";
   text-align: center;
   padding-right: 13px;
+}
+main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 27px;
 }
 main .requirements .requirements_background .requirements_background_join {
   position: relative;
@@ -498,12 +542,10 @@ main .requirements .requirements_background .requirements_background_join {
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/348;
+  /*aspect-ratio: 1450/348;*/
+  object-fit: contain;
 }
 main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond {
-  position: absolute;
-  top: 0;
-  width: 100%;
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
 }
 main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
@@ -577,19 +619,33 @@ main .requirements .requirements_background .requirements_background_map h2 {
   margin-top: 114px;
   margin-bottom: 32px;
 }
+main .requirements .requirements_background .requirements_background_map .map-container {
+  position: relative;
+}
+main .requirements .requirements_background .requirements_background_map .map-container .map-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  backdrop-filter: grayscale(1) invert(1);
+}
+main .requirements .requirements_background .requirements_background_map .map-container .map-here {
+  width: 100%;
+  height: auto;
+}
 main .contacts {
   position: relative;
   background-image: url("images/main-page/backgroundimage_contacts.jpg");
+  background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1450/319;
+  /*aspect-ratio: 1450/319;*/
+  object-fit: contain;
 }
 main .contacts .contacts_background {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   padding: 48px 116px 76px 132px;
@@ -602,7 +658,7 @@ main .contacts .contacts_background .contacts_background_header {
 }
 main .contacts .contacts_background .contacts_background_header h2 {
   color: var(--main-tx-color);
-  font-size: 45px;
+  font-size: var(--main-bold-size);
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
@@ -720,16 +776,18 @@ footer .footer_extra .footer_extra_documents p {
 }
 
 @media (max-width: 375px) {
-  .title .title-background .title_content {
-    margin-top: 176px;
+  main {
+    /*main фиолет*/
   }
-  .title .title-background .title_content h1 {
+  main .title .title-background .title_content h1 {
     font-size: 25px;
+    letter-spacing: 0px;
   }
-  .title .title-background .title_content p {
+  main .title .title-background .title_content p {
     font-size: 16px;
+    letter-spacing: 0;
   }
-  .title .title-background .title_content .title_btn {
+  main .title .title-background .title_content .title_btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -737,16 +795,108 @@ footer .footer_extra .footer_extra_documents p {
     gap: 60px;
     margin-top: 66px;
   }
-  .title .title-background .title_content .title_btn .btn_applicat {
-    padding: 17px 29px;
+  main .title .title-background .title_content .title_btn .btn_applicat {
+    font-size: 13px;
+    padding: 13px 11px;
     max-width: 176px;
   }
-  .title .title-background .title_content .title_btn a {
+  main .title .title-background .title_content .title_btn a {
     display: none;
   }
-  .title .title-background .title_content .img_chat {
-    margin-right: 27px;
+  main .title .title-background .title_content .img_chat {
+    margin: 0 23px 92px 0px;
   }
+  main .about .about_items {
+    padding: 69px 19px 114px 26px;
+  }
+  main .about .about_items .about_items_1r {
+    flex-direction: column-reverse;
+  }
+  main .about .about_items .about_items_1r .about_items_1r_descrip h2 {
+    font-size: 30px;
+    letter-spacing: 0px;
+    padding-top: 0;
+  }
+  main .about .about_items .about_items_1r .about_items_1r_descrip h3 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    max-width: 340px;
+  }
+  main .about .about_items .about_items_2r {
+    flex-direction: column;
+    gap: 56px;
+  }
+  main .about .about_items .about_items_2r .about_items_2r_content {
+    max-width: 320px;
+  }
+  main .about .about_items .about_items_2r .about_items_2r_content h3 {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    margin-top: 67px;
+    align-items: center;
+  }
+  main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn button {
+    padding: 10px 16px;
+    font-size: 12.7px;
+    letter-spacing: 0px;
+  }
+  main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn a {
+    display: none;
+  }
+  main .advantages .advantages_background {
+    backdrop-filter: blur(6px);
+  }
+  main .advantages .advantages_background .advantages_descrip {
+    align-items: center;
+    justify-content: center;
+  }
+  main .advantages .advantages_background .advantages_descrip h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  main .advantages .advantages_background .advantages_descrip .advantages_descrip_content {
+    flex-direction: row;
+    gap: 24px;
+    background: none;
+    backdrop-filter: none;
+  }
+  main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_first_row {
+    flex-direction: column;
+    gap: 60px;
+  }
+  main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_first_row .advantages_descrip_content_first_row_item p {
+    font-size: 14px;
+  }
+  main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_two_row {
+    flex-direction: column;
+    gap: 45px;
+  }
+  main .advantages .advantages_background .advantages_descrip .advantages_descrip_content .advantages_descrip_content_two_row .advantages_descrip_content_two_row_item p {
+    font-size: 14px;
+  }
+  main .reviews .reviews_background .reviews_background_descrip h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain {
+    flex-direction: column;
+    gap: 26px;
+    padding-left: 16px;
+    padding-right: 26px;
+  }
+  main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .photo {
+    margin-bottom: 0px;
+  }
+  main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .nav_arrow {
+    display: none;
+  }
+  /* media желт*/
 }
 
 /*# sourceMappingURL=styles.css.map */
