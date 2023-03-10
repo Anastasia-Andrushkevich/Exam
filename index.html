@@ -11,16 +11,10 @@
    />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 	<title>Cleopartner taxi service</title>
-	<script></script>
+	<script src="scripts.js"></script>
 	
 </head>
-<script>
-    const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-  </script>
+
 <body>
     
     <div class="header">
@@ -41,9 +35,25 @@
             <div class="application">
                 <a href="#">Оставить заявку</a>
             </div>
+            <div class="open_menu">
+                <button><img src="images/main-page/open_menu.svg" width="20" height="12" alt="открыть меню" 
+                title="открыть меню"></button>
+            </div>
     </header>
     </div>
 
+    <div class="mob_menu">
+        <ul>
+            <li><a href="#main_page">Главная</a></li>
+            <li><a href="#insurance">Страховка</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="#delivery">Доставка</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="controls">
+			<button><img src="images/main-page/close.svg"></button>
+		</div>
+    </div>
     <main>
     <div class="title">  
             <div class="title-background">
