@@ -896,6 +896,71 @@ footer .footer_extra .footer_extra_documents p {
   main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .nav_arrow {
     display: none;
   }
+  main .requirements .requirements_background .requirements_background_descrip h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain {
+    flex-direction: column-reverse;
+    padding-left: 26px;
+    padding-top: 0;
+  }
+  main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list {
+    padding-top: 43px;
+  }
+  main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_link .google {
+    display: none;
+  }
+  main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
+    flex-direction: column;
+    padding: 74px 29px;
+  }
+  main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content h2 {
+    font-size: 20px;
+  }
+  main .requirements .requirements_background .requirements_background_map h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  main .requirements .requirements_background .requirements_background_map .map-here {
+    width: 375px;
+    height: 286px;
+  }
+  main .contacts .contacts_background {
+    padding: 52px 30px 82px 26px;
+  }
+  main .contacts .contacts_background .contacts_background_header {
+    flex-direction: column;
+  }
+  main .contacts .contacts_background .contacts_background_header h2 {
+    font-size: 30px;
+  }
+  main .contacts .contacts_background .contacts_background_header .logo {
+    display: none;
+  }
+  main .contacts .contacts_background .contacts_background_connect {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 37px;
+  }
+  main .contacts .contacts_background .contacts_background_connect .comments {
+    display: none;
+  }
+  footer {
+    padding: 36px 58px 76px 26px;
+  }
+  footer .footer_header .footer_header_menu {
+    display: none;
+  }
+  footer .footer_extra {
+    flex-direction: column-reverse;
+    gap: 33px;
+  }
+  footer .footer_extra .footer_extra_documents {
+    flex-direction: column;
+    gap: 8px;
+  }
   /* media желт*/
 }
 

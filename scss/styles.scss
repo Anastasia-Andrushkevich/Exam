@@ -955,7 +955,94 @@ footer{
             }
         }
     }
+    .requirements{
+        .requirements_background{
+            .requirements_background_descrip{
+                h2{
+                    text-align: center;
+                    font-size: 30px;
+                }
+                .requirements_background_descrip_contain{
+                    flex-direction: column-reverse;
+                    padding-left: 26px;
+                    padding-top: 0;
+                    .requirements_background_descrip_contain_content{
+                        .requirements_background_descrip_contain_content_list{
+                            padding-top: 43px;
+                        }
+                        .requirements_background_descrip_contain_content_link{
+                            .google{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .requirements_background_join{
+                .requirements_background_join_fond{
+                    .contain{
+                        flex-direction: column;
+                        padding: 74px 29px;
+                        .contain_content{
+                            h2{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .requirements_background_map{
+                h2{
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .map-here{
+                    width: 375px;
+                    height: 286px;
+                }
+            }
+        }
     
-    
+    }
+    .contacts{
+        .contacts_background{
+            padding: 52px 30px 82px 26px;
+            .contacts_background_header{
+                flex-direction: column;
+                
+                h2{
+                    font-size: 30px;
+                }
+                .logo{
+                    display: none;
+                }
+            }
+            .contacts_background_connect{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 37px;
+                .comments{
+                    display: none;
+                }
+            }
+        }
+    }
 /*main фиолет*/}
+footer{
+    padding: 36px 58px 76px 26px;
+    .footer_header{
+        .footer_header_menu{
+            display: none;
+        }
+    }
+    .footer_extra{
+        flex-direction: column-reverse;
+        gap: 33px;
+        .footer_extra_documents{
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}
 /* media желт*/} 
