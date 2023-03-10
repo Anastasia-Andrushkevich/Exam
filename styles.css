@@ -120,7 +120,7 @@ main .title {
   object-fit: contain;
 }
 main .title .title-background {
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%, rgba(0, 0, 0, 0.11) 100%);
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%, rgba(0, 0, 0, 0.36) 100%);
 }
 main .title .title-background .title_content {
   display: flex;
@@ -189,7 +189,7 @@ main .title .title-background .title_content .img_chat button {
 }
 main .about {
   position: relative;
-  background-image: url("images/main-page/backgroundimage_about.jpg");
+  background-image: url("images/main-page/backgroundimage_about2.jpg");
   background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
@@ -198,7 +198,7 @@ main .about {
   object-fit: contain;
 }
 main .about .about_items {
-  background-color: rgba(30, 30, 30, 0.7);
+  background-color: rgba(77, 74, 74, 0.85);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -206,7 +206,7 @@ main .about .about_items {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 45px 0px 96px 0px;
+  padding: 45px 0px 85px 0px;
 }
 main .about .about_items .about_items_1r {
   display: flex;
@@ -216,7 +216,6 @@ main .about .about_items .about_items_1r {
 }
 main .about .about_items .about_items_1r .phone {
   display: inline-block;
-  width: 100%;
   height: auto;
 }
 main .about .about_items .about_items_1r .about_items_1r_descrip h2 {
@@ -309,7 +308,6 @@ main .about .about_items .about_items_2r .about_items_2r_content .about_items_co
 }
 main .about .about_items .about_items_2r .laptop {
   display: inline-block;
-  width: 100%;
   height: auto;
 }
 main .advantages {
@@ -323,7 +321,7 @@ main .advantages {
   object-fit: contain;
 }
 main .advantages .advantages_background {
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 main .advantages .advantages_background .advantages_descrip {
   display: flex;
@@ -417,7 +415,7 @@ main .advantages .advantages_background .advantages_descrip .advantages_descrip_
 }
 main .reviews {
   position: relative;
-  background-image: url("images/main-page/backgroundimage_reviews.jpg");
+  background-image: url("images/main-page/backgroundimage_reviews3.jpg");
   background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
@@ -499,7 +497,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
 }
 main .requirements {
   position: relative;
-  background-image: url("images/main-page/backgroundimage_requirements.jpg");
+  background-image: url("images/main-page/backgroundimage_requirements2.jpg");
   background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
@@ -508,7 +506,7 @@ main .requirements {
   object-fit: contain;
 }
 main .requirements .requirements_background {
-  background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(64, 64, 64, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 main .requirements .requirements_background .requirements_background_descrip {
   display: flex;
@@ -685,7 +683,7 @@ main .requirements .requirements_background .requirements_background_map .map-co
 }
 main .contacts {
   position: relative;
-  background-image: url("images/main-page/backgroundimage_contacts.jpg");
+  background-image: url("images/main-page/backgroundimage_contacts2.jpg");
   background-repeat: no-repeat;
   max-width: 1450px;
   width: 100%;
@@ -694,7 +692,7 @@ main .contacts {
   object-fit: contain;
 }
 main .contacts .contacts_background {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%), rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   padding: 48px 116px 76px 132px;
 }
