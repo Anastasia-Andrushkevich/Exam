@@ -881,7 +881,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
   max-width: 1450px;
   width: 100%;
   height: auto;
-  /*aspect-ratio: 1450/763;*/
   object-fit: contain;
 }
 .delivery_title .delivery_title-background {
@@ -891,8 +890,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  align-items: center;
-  justify-items: center;
   flex-wrap: wrap;
   gap: 33px;
   padding-top: 275px;
@@ -905,7 +902,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
   letter-spacing: 9px;
   font-family: "RF Dewi", sans-serif;
   text-align: center;
-  max-width: 1071px;
 }
 .delivery_title .delivery_title-background .delivery_title_content p {
   color: var(--main-tx-color);
@@ -953,7 +949,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   display: flex;
   max-width: 1450px;
   justify-content: end;
-  padding: 77px 46px 60px 0;
+  padding: 77px 46px 0px 0;
 }
 .delivery_title .delivery_title-background .delivery_title_content .img_chat button {
   width: 83px;
@@ -963,6 +959,13 @@ footer .footer_extra .footer_extra_documents p a:hover {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
 }
+.delivery_title .delivery_title-background .delivery_title_content .img_chat button:hover {
+  background-color: rgba(63, 62, 62, 0.8549019608);
+}
+.delivery_title .delivery_title-background .delivery_title_content .img_chat button img {
+  max-width: 100%;
+  height: auto;
+}
 
 .delivery_about {
   position: relative;
@@ -971,7 +974,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
   max-width: 1450px;
   width: 100%;
   height: auto;
-  /*aspect-ratio: 1450/1311;*/
   object-fit: contain;
 }
 .delivery_about .delivery_about_items {
@@ -980,15 +982,20 @@ footer .footer_extra .footer_extra_documents p a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 33px;
+  padding: 103px 60px 92px 87px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content {
-  max-width: 732px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
-  opacity: 0.5;
+.delivery_about .delivery_about_items .delivery_about_items_contein {
+  /*max-width: 732px; */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
   border-radius: 42px;
+  padding: 44px 35px 47px 53px;
+  margin-right: 33px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content h3 {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content {
+  position: relative;
+}
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
@@ -996,7 +1003,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   padding-top: 23px;
   letter-spacing: 1px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content ul {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
@@ -1004,23 +1011,24 @@ footer .footer_extra .footer_extra_documents p a:hover {
   opacity: 0.6;
   list-style-type: none;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content ul li {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul li {
   padding-top: 34px;
+  max-width: 510px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content ul li::before {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul li::before {
   color: #00BF63;
   content: " ●";
   text-align: center;
   padding-right: 13px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content .about_items_content_btn {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn {
   display: flex;
   flex-wrap: wrap;
   gap: 38px;
   margin-top: 67px;
   align-items: center;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content .about_items_content_btn button {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn button {
   padding: 13px 21px;
   color: var(--main-tx-color);
   font-size: 16px;
@@ -1032,11 +1040,11 @@ footer .footer_extra .footer_extra_documents p a:hover {
   border-image-slice: 10;
   border-radius: 20px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content .about_items_content_btn button:hover {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn button:hover {
   background-color: rgba(110, 107, 107, 0.7137254902);
   color: #FFFFFF;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content .about_items_content_btn a {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
@@ -1044,8 +1052,139 @@ footer .footer_extra .footer_extra_documents p a:hover {
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_content .about_items_content_btn a:hover {
+.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn a:hover {
   text-decoration: underline;
+}
+.delivery_about .delivery_about_items .about_image .background_moto {
+  position: relative;
+}
+.delivery_about .delivery_about_items .about_image .background_moto img {
+  max-width: 100%;
+  height: auto;
+}
+.delivery_about .delivery_about_items .about_image .moto {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 14%;
+}
+.delivery_about .delivery_about_items .about_image .moto img {
+  max-width: 100%;
+  height: auto;
+}
+.delivery_about .delivery_about_items .about_image .bag {
+  position: absolute;
+  z-index: 11;
+  left: 69%;
+  top: 23%;
+}
+.delivery_about .delivery_about_items .about_image .bag img {
+  max-width: 100%;
+  height: auto;
+}
+
+.delivery_advantages {
+  position: relative;
+  background-image: url("images/delivery/delivery_backgroundimage_advantch.jpg");
+  background-repeat: repeat-y;
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  /*aspect-ratio: 1450/678;*/
+  object-fit: contain;
+}
+.delivery_advantages .delivery_advantages_background {
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 105px;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip h2 {
+  color: var(--main-tx-color);
+  font-size: var(--main-bold-size);
+  padding-top: 66px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  border-radius: 42px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  padding: 54px 40px 50px 39px;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row {
+  display: flex;
+  flex-direction: row;
+  gap: 146px;
+  align-items: center;
+  justify-content: center;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 236px;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item .delivery_img_first_row {
+  width: 64px;
+  height: 64px;
+  background: #2BE3A0;
+  box-shadow: 0px 17px 17px rgba(43, 227, 160, 0.28);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item p {
+  padding-top: 18px;
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row {
+  display: flex;
+  flex-direction: row;
+  gap: 116px;
+  align-items: center;
+  justify-content: center;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 265px;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item .delivery_img_two_row {
+  width: 64px;
+  height: 64px;
+  background: #FFFFFF;
+  box-shadow: 0px 17px 17px rgba(255, 255, 255, 0.28);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item p {
+  padding-top: 18px;
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 1110px) {

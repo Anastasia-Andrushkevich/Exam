@@ -148,7 +148,6 @@ main{
         background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%,rgba(0, 0, 0, 0.36) 100%);
         
             .title_content{
-                
                 display: flex;    
                 flex-direction: column; 
                 box-sizing: border-box;   
@@ -916,13 +915,12 @@ footer{
 }
 
     .delivery_title{
-        position: relative;   
+       position: relative;   
         background-image: url('images/delivery/delivery_backgroundimage-title.jpg');
         background-repeat: repeat-y;
         max-width: 1450px;
         width: 100%;
         height: auto;
-        /*aspect-ratio: 1450/763;*/
         object-fit: contain;
     
         .delivery_title-background{  
@@ -933,8 +931,6 @@ footer{
                     display: flex;    
                     flex-direction: column; 
                     box-sizing: border-box;   
-                    align-items: center;
-                    justify-items: center;
                     flex-wrap: wrap;
                     gap: 33px;
                     padding-top: 275px;   
@@ -946,7 +942,6 @@ footer{
                         letter-spacing: 9px;
                         font-family: 'RF Dewi', sans-serif;
                         text-align: center;
-                        max-width: 1071px;
                     }
                     p{
                         color: var(--main-tx-color);
@@ -994,7 +989,7 @@ footer{
                         display: flex;   
                         max-width: 1450px; 
                         justify-content: end;
-                        padding: 77px 46px 60px 0;
+                        padding: 77px 46px 0px 0;
                         button{
                             width: 83px;
                             height: 83px;
@@ -1002,6 +997,13 @@ footer{
                             border: 0;
                             background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
                             backdrop-filter: blur(2px);
+                            &:hover{
+                                background-color: #3f3e3eda;
+                            }
+                            img{
+                                max-width: 100%;
+                                height: auto;
+                            }
                         }
                     }
                         
@@ -1015,7 +1017,6 @@ footer{
         max-width: 1450px;
         width: 100%;
         height: auto;
-        /*aspect-ratio: 1450/1311;*/
         object-fit: contain;
         .delivery_about_items{
             background-color: rgb(41 39 39 / 70%);
@@ -1023,29 +1024,34 @@ footer{
             flex-direction: row;
             flex-wrap: wrap;
             gap: 33px;
-            .delivery_about_items_content{  
-                max-width: 732px; 
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
-                opacity: 0.5;
+            padding: 103px 60px 92px 87px;
+            .delivery_about_items_contein{  
+                /*max-width: 732px; */
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), rgba(0, 0, 0, 0.3);
                 backdrop-filter: blur(6px);
-                border-radius: 42px;   
-                h3{
-                            color: var(--main-tx-color);
-                            font-size: 26px;
-                            font-weight: 700;
-                            font-family: 'RW Dewi', sans-serif;
-                            padding-top: 23px;
-                            letter-spacing: 1px;
+                border-radius: 42px; 
+                padding: 44px 35px 47px 53px;  
+                margin-right: 33px;
+                .delivery_about_items_contein_content{
+                    position: relative;
+                    h3{
+                        color: var(--main-tx-color);
+                        font-size: 26px;
+                        font-weight: 700;
+                        font-family: 'RW Dewi', sans-serif;
+                        padding-top: 23px;
+                        letter-spacing: 1px;
                         }
-                        ul{
-                            color: var(--main-tx-color);
-                            font-size: 16px;
-                            font-family: 'RW Dewi', sans-serif;
-                            letter-spacing: 1px;
-                            opacity: 0.6;
-                            list-style-type: none;
+                    ul{
+                        color: var(--main-tx-color);
+                        font-size: 16px;
+                        font-family: 'RW Dewi', sans-serif;
+                        letter-spacing: 1px;
+                        opacity: 0.6;
+                        list-style-type: none;
                             li{
                             padding-top: 34px;
+                            max-width: 510px;
                             
                                 &::before{
                                 color: #00BF63;
@@ -1087,10 +1093,147 @@ footer{
                                         text-decoration: underline;
                                     }
                             }
-                        }      
+                        }   
                     }
+                   
+                }
+            .about_image{
+                .background_moto{
+                    position: relative;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .moto{
+                    position: absolute;
+                    z-index: 10;
+                    left: 50%;
+                    top: 14%;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .bag{
+                    position: absolute;
+                    z-index: 11;
+                    left: 69%;
+                    top: 23%;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            } 
         }
         
+    }
+    .delivery_advantages{
+        position: relative;   
+        background-image: url('images/delivery/delivery_backgroundimage_advantch.jpg');
+        background-repeat: repeat-y;
+        max-width: 1450px;
+        width: 100%;
+        height: auto;
+        /*aspect-ratio: 1450/678;*/
+        object-fit: contain;
+    
+        .delivery_advantages_background{
+            background: linear-gradient(180deg, rgba(30, 30, 30, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+            
+        .delivery_advantages_descrip{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            padding-bottom: 105px;
+            h2{
+                color: var(--main-tx-color);
+                font-size: var(--main-bold-size);
+                padding-top: 66px;
+                font-family: 'RF Dewi Expanded', sans-serif;
+                letter-spacing: 1px;
+            }
+            .delivery_advantages_descrip_content{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(6px);
+                border-radius: 42px;
+                margin-top: 30px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                align-items: center;
+                padding: 54px 40px 50px 39px;
+                .delivery_advantages_descrip_content_first_row{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 146px;
+                    align-items: center;
+                    justify-content: center;
+                    .delivery_advantages_descrip_content_first_row_item{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        max-width: 236px;
+                        .delivery_img_first_row{
+                            width: 64px;
+                            height: 64px;
+                            background: #2BE3A0;
+                            box-shadow: 0px 17px 17px rgba(43, 227, 160, 0.28);
+                            border-radius: 12px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        p{
+                            padding-top: 18px;  
+                            color: var(--main-tx-color);
+                            font-size: 16px;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            text-align: center;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+                .delivery_advantages_descrip_content_two_row{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 116px;
+                    align-items: center;
+                    justify-content: center;
+                    .delivery_advantages_descrip_content_two_row_item{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        max-width: 265px;
+                        .delivery_img_two_row{
+                            width: 64px;
+                            height: 64px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 17px 17px rgba(255, 255, 255, 0.28);
+                            border-radius: 12px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        p{
+                            padding-top: 18px;  
+                            color: var(--main-tx-color);
+                            font-size: 16px;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            text-align: center;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        }
     }
 
 @media (min-width:1110px){
