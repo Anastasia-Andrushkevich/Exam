@@ -127,6 +127,27 @@ main {
   margin-right: auto;
   /*закрывающая для main желтая*/
 }
+main .marked_list {
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-family: "RW Dewi", sans-serif;
+  letter-spacing: 1px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .marked_list li {
+  display: flex;
+  gap: 13px;
+}
+main .marked_list li::before {
+  color: #3BE893;
+  content: "●";
+  font-size: 45px;
+  vertical-align: top;
+  line-height: 25px;
+}
 main .title {
   position: relative;
   background-image: url("images/main-page/title_background.jpg");
@@ -296,17 +317,18 @@ main .about .about_items .about_items_2r .about_items_2r_content ul {
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
   letter-spacing: 1px;
-  opacity: 0.6;
   list-style-type: none;
 }
 main .about .about_items .about_items_2r .about_items_2r_content ul li {
   padding-top: 34px;
+  opacity: 0.6;
 }
 main .about .about_items .about_items_2r .about_items_2r_content ul li::before {
-  color: #00BF63;
-  content: " ●";
-  text-align: center;
-  padding-right: 13px;
+  color: #3BE893;
+  content: "●";
+  font-size: 45px;
+  vertical-align: top;
+  line-height: 25px;
 }
 main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn {
   display: flex;
@@ -463,7 +485,7 @@ main .reviews {
   object-fit: contain;
 }
 main .reviews .reviews_background {
-  background: linear-gradient(180deg, rgba(64, 64, 64, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(15, 14, 14, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
 main .reviews .reviews_background .reviews_background_descrip {
   display: flex;
@@ -545,38 +567,37 @@ main .requirements {
   max-width: 1450px;
   width: 100%;
   height: auto;
-  /*aspect-ratio: 1450/1178;*/
   object-fit: contain;
 }
 main .requirements .requirements_background {
   background: linear-gradient(180deg, rgba(64, 64, 64, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
-main .requirements .requirements_background .requirements_background_descrip {
+main .requirements .requirements_background_descrip {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .requirements .requirements_background .requirements_background_descrip h2 {
+main .requirements .requirements_background_descrip h2 {
   color: var(--main-tx-color);
   font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain {
+main .requirements .requirements_background_descrip_contain {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 85px 0px 29px 68px;
-}
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img {
-  position: relative;
-  flex-grow: 1;
+  padding: 50px 70px;
   width: 100%;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .background {
+main .requirements .requirements_background_descrip_contain_img {
+  position: relative;
+  flex-basis: 650px;
+}
+main .requirements .requirements_background_descrip_contain_img .background {
   position: relative;
   top: 0px;
   left: -3%;
@@ -584,41 +605,47 @@ main .requirements .requirements_background .requirements_background_descrip .re
   max-width: 55%;
   height: auto;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_img .audi {
+main .requirements .requirements_background_descrip_contain_img .audi {
   position: absolute;
   max-width: 100%;
   height: auto;
   left: 0;
   z-index: 11;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content {
+main .requirements .requirements_background_descrip_contain_content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 44px;
-  padding-left: 120px;
+  padding-left: 80px;
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list {
+main .requirements .requirements_background_descrip_contain_content_list {
   margin-top: 0;
+  /*ul{
+      color: var(--main-tx-color);
+      font-size: 16px;
+      font-family: 'RW Dewi', sans-serif;
+      letter-spacing: 1px;
+      list-style-type: none;
+      margin-bottom: 20px;
+
+      display: flex;
+      flex-direction: column;
+      gap:30px;
+      li{
+          display: flex;
+          gap:13px;
+          &::before{
+              color: #3BE893;
+              content: "●";
+              font-size: 45px;
+              vertical-align: top;
+              line-height: 25px;
+          }
+      }
+  }*/
 }
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list ul {
-  color: var(--main-tx-color);
-  font-size: 16px;
-  font-family: "RW Dewi", sans-serif;
-  letter-spacing: 1px;
-  list-style-type: none;
-  margin-bottom: 20px;
-}
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list ul li {
-  padding-top: 34px;
-}
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_list ul li::before {
-  color: #00BF63;
-  content: " ●";
-  text-align: center;
-  padding-right: 13px;
-}
-main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content .requirements_background_descrip_contain_content_link {
+main .requirements .requirements_background_descrip_contain_content_link {
   display: flex;
   flex-direction: row;
   gap: 27px;
@@ -717,14 +744,20 @@ main .requirements .requirements_background .requirements_background_map .map-co
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   pointer-events: none;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 1001;
   backdrop-filter: grayscale(1) invert(1);
 }
 main .requirements .requirements_background .requirements_background_map .map-container .map-here iframe {
   max-width: 100%;
   height: auto;
+  aspect-ratio: 1450/348;
+  min-height: 300px;
 }
 main .contacts {
   position: relative;
@@ -739,7 +772,7 @@ main .contacts {
 main .contacts .contacts_background {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%), rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
-  padding: 48px 116px 76px 132px;
+  padding: 50px 116px 76px 132px;
 }
 main .contacts .contacts_background .contacts_background_header {
   display: flex;
@@ -763,7 +796,7 @@ main .contacts .contacts_background .contacts_background_header p {
   margin-top: 27px;
 }
 main .contacts .contacts_background .contacts_background_header img {
-  margin-top: -16px;
+  margin-top: -12px;
 }
 main .contacts .contacts_background .contacts_background_connect {
   display: grid;
@@ -985,7 +1018,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   padding: 103px 60px 92px 87px;
 }
 .delivery_about .delivery_about_items .delivery_about_items_contein {
-  /*max-width: 732px; */
+  max-width: 732px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
   border-radius: 42px;
@@ -1001,25 +1034,14 @@ footer .footer_extra .footer_extra_documents p a:hover {
   font-weight: 700;
   font-family: "RW Dewi", sans-serif;
   padding-top: 23px;
-  letter-spacing: 1px;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
 }
 .delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul {
-  color: var(--main-tx-color);
-  font-size: 16px;
-  font-family: "RW Dewi", sans-serif;
-  letter-spacing: 1px;
   opacity: 0.6;
-  list-style-type: none;
 }
 .delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul li {
-  padding-top: 34px;
   max-width: 510px;
-}
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul li::before {
-  color: #00BF63;
-  content: " ●";
-  text-align: center;
-  padding-right: 13px;
 }
 .delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn {
   display: flex;
@@ -1065,7 +1087,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_about .delivery_about_items .about_image .moto {
   position: absolute;
   z-index: 10;
-  left: 50%;
+  left: 60%;
   top: 14%;
 }
 .delivery_about .delivery_about_items .about_image .moto img {
@@ -1075,7 +1097,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_about .delivery_about_items .about_image .bag {
   position: absolute;
   z-index: 11;
-  left: 69%;
+  left: 79%;
   top: 23%;
 }
 .delivery_about .delivery_about_items .about_image .bag img {
@@ -1108,7 +1130,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 6px;
 }
 .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
@@ -1120,12 +1142,12 @@ footer .footer_extra .footer_extra_documents p a:hover {
   flex-direction: column;
   gap: 48px;
   align-items: center;
-  padding: 54px 40px 50px 39px;
+  padding: 54px 40px 44px 39px;
 }
 .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row {
   display: flex;
   flex-direction: row;
-  gap: 146px;
+  gap: 104px;
   align-items: center;
   justify-content: center;
 }
@@ -1134,7 +1156,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 236px;
+  max-width: 290px;
 }
 .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item .delivery_img_first_row {
   width: 64px;
@@ -1157,7 +1179,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row {
   display: flex;
   flex-direction: row;
-  gap: 116px;
+  gap: 141px;
   align-items: center;
   justify-content: center;
 }
@@ -1166,7 +1188,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 265px;
+  max-width: 256px;
 }
 .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item .delivery_img_two_row {
   width: 64px;
@@ -1185,6 +1207,84 @@ footer .footer_extra .footer_extra_documents p a:hover {
   font-family: "RF Dewi Expanded", sans-serif;
   text-align: center;
   letter-spacing: 1px;
+}
+
+.delivery_faq {
+  position: relative;
+  background-image: url("images/delivery/delivery_backgroundimage_faq3.jpg");
+  background-repeat: repeat-y;
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.delivery_faq .delivery_faq_background {
+  background: linear-gradient(180deg, rgba(15, 14, 14, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 137px;
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain h2 {
+  color: var(--main-tx-color);
+  font-size: var(--main-bold-size);
+  padding-top: 66px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 6px;
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion {
+  border-radius: 41px;
+  overflow: hidden;
+  max-width: 1215px;
+  margin-top: 45px;
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item {
+  background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(2px);
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .active {
+  /*.accordion_item_header{
+      color: #E9BC47;
+      &::after{
+          transform: rotate(90deg);
+      }
+  }*/
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .active .accordion_item_content {
+  max-height: 100vh;
+  padding-bottom: 50px;
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .accordion_item_header {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded", sans-serif;
+  color: var(--main-tx-color);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 26px 30px 26px 50px;
+  cursor: pointer;
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .accordion_item_header::after {
+  content: "❯";
+  width: 30px;
+  height: 15px;
+  text-align: center;
+  transition: all 300ms;
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .accordion_item_content {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "RF Dewi Expanded", sans-serif;
+  color: var(--main-tx-color);
+  padding-left: 50px;
+  padding-right: 17px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 500ms;
 }
 
 @media (min-width: 1110px) {
