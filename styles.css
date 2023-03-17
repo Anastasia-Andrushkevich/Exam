@@ -121,117 +121,10 @@
   background-color: rgba(19, 18, 18, 0.5);
 }
 
-.accordion {
-  border-radius: 41px;
-  overflow: hidden;
-  max-width: 1215px;
-  margin-top: 45px;
-}
-.accordion_item {
-  background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(2px);
-}
-.accordion_item.active .accordion_item_header {
-  color: #E9BC47;
-}
-.accordion_item.active .accordion_item_header::after {
-  transform: rotate(90deg);
-}
-.accordion_item.active .accordion_item_content {
-  max-height: 100vh;
-  padding-bottom: 50px;
-}
-.accordion_item_header {
-  font-size: 26px;
-  font-weight: 700;
-  font-family: "RF Dewi Expanded", sans-serif;
-  color: var(--main-tx-color);
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 26px 30px 26px 50px;
-  cursor: pointer;
-}
-.accordion_item_header::after {
-  content: "❯";
-  width: 30px;
-  height: 15px;
-  text-align: center;
-  transition: all 300ms;
-}
-.accordion_item_content {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "RF Dewi Expanded", sans-serif;
-  color: var(--main-tx-color);
-  padding-left: 50px;
-  padding-right: 17px;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 500ms;
-}
-
 main {
   max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
-  /* .accordion{
-      border-radius: 41px;
-      overflow: hidden;
-      max-width: 1215px;
-      margin-top: 45px;
-
-      &_item{
-          background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
-          backdrop-filter: blur(2px);
-
-          &.active{
-
-              .accordion_item_header{
-                  color: #E9BC47;
-                  &::after{
-                      transform: rotate(90deg);
-                  }
-              }
-              .accordion_item_content{
-                  max-height: 100vh;
-                  padding-bottom: 50px;
-              }
-
-          }
-          &_header{
-              font-size: 26px;
-              font-weight: 700;
-              font-family: 'RF Dewi Expanded', sans-serif;
-              color: var(--main-tx-color);
-              display: flex;
-              justify-content: space-between;
-              box-sizing: border-box;
-              padding: 26px 30px 26px 50px;
-              cursor: pointer;
-              &::after{
-                  content: "\276F";
-                  width: 30px;
-                  height: 15px;
-                  text-align: center;
-                  transition: all 300ms;
-              }
-          }
-
-
-          &_content{
-              font-size: 20px;
-              font-weight: 600;
-              font-family: 'RF Dewi Expanded', sans-serif;
-              color: var(--main-tx-color);
-              padding-left: 50px;
-              padding-right: 17px;
-              max-height: 0;
-              overflow: hidden;
-              transition: all 500ms;
-          }
-      }
-  }*/
   /*закрывающая для main желтая*/
 }
 main .marked_list {
@@ -254,6 +147,55 @@ main .marked_list li::before {
   font-size: 45px;
   vertical-align: top;
   line-height: 25px;
+}
+main .accordion {
+  border-radius: 41px;
+  overflow: hidden;
+  max-width: 1215px;
+  margin-top: 45px;
+}
+main .accordion_item {
+  background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(2px);
+}
+main .accordion_item.active .accordion_item_header {
+  color: #E9BC47;
+}
+main .accordion_item.active .accordion_item_header::after {
+  transform: rotate(90deg);
+}
+main .accordion_item.active .accordion_item_content {
+  max-height: 100vh;
+  padding-bottom: 50px;
+}
+main .accordion_item_header {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded", sans-serif;
+  color: var(--main-tx-color);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 26px 30px 26px 50px;
+  cursor: pointer;
+}
+main .accordion_item_header::after {
+  content: "❯";
+  width: 30px;
+  height: 15px;
+  text-align: center;
+  transition: all 300ms;
+}
+main .accordion_item_content {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "RF Dewi Expanded", sans-serif;
+  color: var(--main-tx-color);
+  padding-left: 50px;
+  padding-right: 17px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 500ms;
 }
 main .title {
   position: relative;
@@ -1978,17 +1920,38 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .delivery_title {
     background-image: url("images/delivery/delivery_backgroundimage-title_mob.jpg");
   }
+  .delivery_title .delivery_title-background .delivery_title_content {
+    padding-top: 203px;
+  }
   .delivery_title .delivery_title-background .delivery_title_content h1 {
     font-size: 30px;
     letter-spacing: 0px;
   }
   .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    margin-top: 66px;
+    margin-top: 0px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn .btn_applicat {
+    font-size: 13px;
+    padding: 13px 11px;
+    max-width: 176px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn a {
+    display: none;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .img_chat {
+    padding: 8px 23px 60px 0;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .img_chat button {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .img_chat button img {
+    width: 25px;
+    height: 25px;
   }
   .delivery_about_items {
     flex-direction: column;
@@ -2048,6 +2011,30 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item p {
     font-size: 14px;
+  }
+  .delivery_faq_background_contain {
+    padding-bottom: 90px;
+  }
+  .delivery_faq_background_contain h2 {
+    font-size: 30px;
+    padding-top: 57px;
+  }
+  .delivery_faq_background_contain .accordion_item.active .accordion_item_content {
+    max-height: 100vh;
+    padding-bottom: 16px;
+  }
+  .delivery_faq_background_contain .accordion_item_header {
+    font-size: 20px;
+    padding: 29px 30px 17px 29px;
+  }
+  .delivery_faq_background_contain .accordion_item_header::after {
+    width: 24px;
+    height: 12px;
+  }
+  .delivery_faq_background_contain .accordion_item_content {
+    font-size: 16px;
+    padding-left: 29px;
+    padding-right: 99px;
   }
   /* media желт*/
 }

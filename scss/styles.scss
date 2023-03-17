@@ -129,7 +129,7 @@
         }
     }
 }
-@import "_accordion";
+
 main{
     max-width: 1450px;
     margin-left: auto;
@@ -155,7 +155,7 @@ main{
              }
          }
      }
-    /* .accordion{
+    .accordion{
         border-radius: 41px;
         overflow: hidden;
         max-width: 1215px;
@@ -211,7 +211,7 @@ main{
                 transition: all 500ms;
             }
         }
-    }*/
+    }
 .title{
     position: relative;   
     background-image: url('images/main-page/title_background.jpg');
@@ -2111,21 +2111,39 @@ footer{
     background-image: url('images/delivery/delivery_backgroundimage-title_mob.jpg');
     .delivery_title-background{  
         .delivery_title_content{        
-                h1{
+            padding-top: 203px;     
+            h1{
                     font-size: 30px;
                     letter-spacing: 0px;
                 }
                 .delivery_title_btn{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    gap: 60px;
-                    margin-top: 66px;
+                    margin-top: 0px;
+                    .btn_applicat{
+                        font-size: 13px;
+                        padding: 13px 11px;
+                        max-width: 176px;
+                    }
+                    a{
+                        display: none;
+                    }
                 }
-                
+                .img_chat{
+                    padding: 8px 23px 60px 0;
+                button{
+                    width: 43px;
+                    height: 43px;
+                    border-radius: 50%;
+                    border: 0;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                    backdrop-filter: blur(2px);
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
                 }
     }
+}
 }
 .delivery_about{
     &_items{
@@ -2195,6 +2213,41 @@ footer{
                 }
 
             }
+        }
+    }
+}
+.delivery_faq{
+    &_background{
+        &_contain{
+            padding-bottom: 90px;
+        h2{
+            font-size: 30px;
+            padding-top: 57px;
+        }
+        .accordion{            
+            &_item{
+                &.active{
+                    .accordion_item_content{
+                        max-height: 100vh;
+                        padding-bottom: 16px;
+                    }
+                }
+                &_header{
+                    font-size: 20px;
+                    padding: 29px 30px 17px 29px;
+                    &::after{
+                        width: 24px;
+                        height: 12px;
+                    }
+                }
+                &_content{
+                    font-size: 16px;
+                    padding-left: 29px;
+                    padding-right: 99px;
+                }
+            }
+        }
+        
         }
     }
 }
