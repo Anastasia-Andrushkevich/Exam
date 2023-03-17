@@ -155,8 +155,8 @@ main .title {
   max-width: 1450px;
   width: 100%;
   height: auto;
-  /*aspect-ratio: 1450/763;*/
-  object-fit: contain;
+  aspect-ratio: 1450/763;
+  /*object-fit: contain;*/
 }
 main .title .title-background {
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%, rgba(0, 0, 0, 0.36) 100%);
@@ -1245,15 +1245,13 @@ footer .footer_extra .footer_extra_documents p a:hover {
   background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(2px);
 }
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .active {
-  /*.accordion_item_header{
-      color: #E9BC47;
-      &::after{
-          transform: rotate(90deg);
-      }
-  }*/
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item.active.accordion_item_header {
+  color: #E9BC47;
 }
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .active .accordion_item_content {
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item.active.accordion_item_header::after {
+  transform: rotate(90deg);
+}
+.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item.active.accordion_item_content {
   max-height: 100vh;
   padding-bottom: 50px;
 }
@@ -1583,14 +1581,15 @@ footer .footer_extra .footer_extra_documents p a:hover {
     /*main фиолет*/
   }
   main .title .title-background .title_content {
-    /*p{
-        font-size: 16px;
-        letter-spacing: 0;
-    }*/
+    padding: 173px 5px 0px 5px;
   }
   main .title .title-background .title_content h1 {
     font-size: 30px;
-    letter-spacing: 0px;
+    letter-spacing: normal;
+  }
+  main .title .title-background .title_content p {
+    font-size: 16px;
+    letter-spacing: 0;
   }
   main .title .title-background .title_content .title_btn {
     display: flex;
@@ -1609,7 +1608,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
   }
   main .title .title-background .title_content .img_chat {
-    padding: 8px 27px 60px 0;
+    padding: 8px 0px 60px 0;
   }
   main .title .title-background .title_content .img_chat button {
     width: 43px;
@@ -1832,6 +1831,21 @@ footer .footer_extra .footer_extra_documents p a:hover {
   footer .footer_extra .footer_extra_documents {
     flex-direction: column;
     gap: 8px;
+  }
+  .delivery_title {
+    background-image: url("images/delivery/delivery_backgroundimage-title_mob.jpg");
+  }
+  .delivery_title .delivery_title-background .delivery_title_content h1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 66px;
   }
   /* media желт*/
 }

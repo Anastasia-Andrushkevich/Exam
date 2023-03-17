@@ -161,8 +161,8 @@ main{
     max-width: 1450px;
     width: 100%;
     height: auto;
-    /*aspect-ratio: 1450/763;*/
-    object-fit: contain;
+    aspect-ratio: 1450/763;
+    /*object-fit: contain;*/
 
     .title-background{  
         background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%,rgba(0, 0, 0, 0.36) 100%);
@@ -1288,15 +1288,15 @@ footer{
                 .accordion_item{
                 background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
                 backdrop-filter: blur(2px);
-                .active{
+                &.active{
                
-                    /*.accordion_item_header{
+                    &.accordion_item_header{
                         color: #E9BC47;
                         &::after{
                             transform: rotate(90deg);
                         }
-                    }*/
-                    .accordion_item_content{
+                    }
+                    &.accordion_item_content{
                         max-height: 100vh;
                         padding-bottom: 50px;
                     }
@@ -1697,7 +1697,9 @@ footer{
             }
         }
     }
-}
+    
+    
+} 
 @media (min-width:375px) and (max-width:600px){
    .header{
     header{
@@ -1726,14 +1728,15 @@ footer{
     .title{
         .title-background{  
             .title_content{        
-                    h1{
+                padding: 173px 5px 0px 5px;    
+                h1{
                         font-size: 30px;
-                        letter-spacing: 0px;
+                        letter-spacing: normal;
                     }
-                    /*p{
+                    p{
                         font-size: 16px;
                         letter-spacing: 0;
-                    }*/
+                    }
                     .title_btn{
                         display: flex;
                         align-items: center;
@@ -1751,7 +1754,7 @@ footer{
                         }
                     }
                     .img_chat{
-                        padding: 8px 27px 60px 0;
+                        padding: 8px 0px 60px 0;
                     button{
                         width: 43px;
                         height: 43px;
@@ -2016,6 +2019,26 @@ footer{
             flex-direction: column;
             gap: 8px;
         }
+    }
+}
+.delivery_title{
+    background-image: url('images/delivery/delivery_backgroundimage-title_mob.jpg');
+    .delivery_title-background{  
+        .delivery_title_content{        
+                h1{
+                    font-size: 30px;
+                    letter-spacing: 0px;
+                }
+                .delivery_title_btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 60px;
+                    margin-top: 66px;
+                }
+                
+                }
     }
 }
 /* media желт*/} 

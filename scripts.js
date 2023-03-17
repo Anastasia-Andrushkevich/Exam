@@ -19,11 +19,11 @@ window.addEventListener("DOMContentLoaded", function () {
             accItems[i].addEventListener("click", function(event){
                 
                 [].forEach.call(accItems, function(element){
-                    element.closest(".accordion_item").classList.remove("active")
+                    element.closest(".accordion_item").classList.remove(".active")
                 });
 
                 const root = event.target.closest(".accordion_item");
-                root.classList.toggle("active");
+                root.classList.toggle(".active");
 
             });
         }
