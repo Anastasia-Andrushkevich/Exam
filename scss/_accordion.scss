@@ -1,0 +1,57 @@
+.accordion{
+    border-radius: 41px;
+    overflow: hidden;
+    max-width: 1215px;
+    margin-top: 45px;
+    
+    &_item{
+        background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+        backdrop-filter: blur(2px);
+        
+        &.active{
+    
+            .accordion_item_header{
+                color: #E9BC47;
+                &::after{
+                    transform: rotate(90deg);
+                }
+            }
+            .accordion_item_content{
+                max-height: 100vh;
+                padding-bottom: 50px;
+            }
+        
+        }
+        &_header{
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'RF Dewi Expanded', sans-serif;
+            color: var(--main-tx-color);
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 26px 30px 26px 50px;
+            cursor: pointer;
+            &::after{
+                content: "\276F";
+                width: 30px;
+                height: 15px;
+                text-align: center;
+                transition: all 300ms;
+            }
+        }
+        
+        
+        &_content{
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'RF Dewi Expanded', sans-serif;
+            color: var(--main-tx-color);
+            padding-left: 50px;
+            padding-right: 17px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 500ms;
+        }
+    }
+}

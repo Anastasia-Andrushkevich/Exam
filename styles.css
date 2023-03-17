@@ -121,10 +121,117 @@
   background-color: rgba(19, 18, 18, 0.5);
 }
 
+.accordion {
+  border-radius: 41px;
+  overflow: hidden;
+  max-width: 1215px;
+  margin-top: 45px;
+}
+.accordion_item {
+  background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(2px);
+}
+.accordion_item.active .accordion_item_header {
+  color: #E9BC47;
+}
+.accordion_item.active .accordion_item_header::after {
+  transform: rotate(90deg);
+}
+.accordion_item.active .accordion_item_content {
+  max-height: 100vh;
+  padding-bottom: 50px;
+}
+.accordion_item_header {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded", sans-serif;
+  color: var(--main-tx-color);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 26px 30px 26px 50px;
+  cursor: pointer;
+}
+.accordion_item_header::after {
+  content: "❯";
+  width: 30px;
+  height: 15px;
+  text-align: center;
+  transition: all 300ms;
+}
+.accordion_item_content {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "RF Dewi Expanded", sans-serif;
+  color: var(--main-tx-color);
+  padding-left: 50px;
+  padding-right: 17px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
 main {
   max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
+  /* .accordion{
+      border-radius: 41px;
+      overflow: hidden;
+      max-width: 1215px;
+      margin-top: 45px;
+
+      &_item{
+          background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+          backdrop-filter: blur(2px);
+
+          &.active{
+
+              .accordion_item_header{
+                  color: #E9BC47;
+                  &::after{
+                      transform: rotate(90deg);
+                  }
+              }
+              .accordion_item_content{
+                  max-height: 100vh;
+                  padding-bottom: 50px;
+              }
+
+          }
+          &_header{
+              font-size: 26px;
+              font-weight: 700;
+              font-family: 'RF Dewi Expanded', sans-serif;
+              color: var(--main-tx-color);
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 26px 30px 26px 50px;
+              cursor: pointer;
+              &::after{
+                  content: "\276F";
+                  width: 30px;
+                  height: 15px;
+                  text-align: center;
+                  transition: all 300ms;
+              }
+          }
+
+
+          &_content{
+              font-size: 20px;
+              font-weight: 600;
+              font-family: 'RF Dewi Expanded', sans-serif;
+              color: var(--main-tx-color);
+              padding-left: 50px;
+              padding-right: 17px;
+              max-height: 0;
+              overflow: hidden;
+              transition: all 500ms;
+          }
+      }
+  }*/
   /*закрывающая для main желтая*/
 }
 main .marked_list {
@@ -248,7 +355,7 @@ main .about {
   /*aspect-ratio: 1450/1311;*/
   object-fit: contain;
 }
-main .about .about_items {
+main .about_items {
   background-color: rgba(77, 74, 74, 0.85);
   display: flex;
   flex-direction: column;
@@ -259,18 +366,18 @@ main .about .about_items {
   box-sizing: border-box;
   padding: 45px 45px 85px 45px;
 }
-main .about .about_items .about_items_1r {
+main .about_items_1r {
   display: flex;
   flex-direction: row;
 }
-main .about .about_items .about_items_1r .phone {
+main .about_items_1r .phone {
   padding-right: 90px;
 }
-main .about .about_items .about_items_1r .phone img {
+main .about_items_1r .phone img {
   max-width: 100%;
   height: auto;
 }
-main .about .about_items .about_items_1r .about_items_1r_descrip h2 {
+main .about_items_1r_descrip h2 {
   color: var(--main-tx-color);
   font-size: 45px;
   font-weight: 700;
@@ -278,7 +385,7 @@ main .about .about_items .about_items_1r .about_items_1r_descrip h2 {
   padding-top: 160px;
   letter-spacing: 10px;
 }
-main .about .about_items .about_items_1r .about_items_1r_descrip h3 {
+main .about_items_1r_descrip h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
@@ -288,7 +395,7 @@ main .about .about_items .about_items_1r .about_items_1r_descrip h3 {
   line-height: 31px;
   max-width: 555px;
 }
-main .about .about_items .about_items_1r .about_items_1r_descrip p {
+main .about_items_1r_descrip p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
@@ -297,14 +404,14 @@ main .about .about_items .about_items_1r .about_items_1r_descrip p {
   letter-spacing: 1px;
   max-width: 449px;
 }
-main .about .about_items .about_items_2r {
+main .about_items_2r {
   display: flex;
   flex-direction: row;
 }
-main .about .about_items .about_items_2r .about_items_2r_content {
+main .about_items_2r_content {
   max-width: 567px;
 }
-main .about .about_items .about_items_2r .about_items_2r_content h3 {
+main .about_items_2r_content h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
@@ -312,32 +419,32 @@ main .about .about_items .about_items_2r .about_items_2r_content h3 {
   padding-top: 23px;
   letter-spacing: 1px;
 }
-main .about .about_items .about_items_2r .about_items_2r_content ul {
+main .about_items_2r_content ul {
   color: var(--main-tx-color);
   font-size: 16px;
   font-family: "RW Dewi", sans-serif;
   letter-spacing: 1px;
   list-style-type: none;
 }
-main .about .about_items .about_items_2r .about_items_2r_content ul li {
+main .about_items_2r_content ul li {
   padding-top: 34px;
   opacity: 0.6;
 }
-main .about .about_items .about_items_2r .about_items_2r_content ul li::before {
+main .about_items_2r_content ul li::before {
   color: #3BE893;
   content: "●";
   font-size: 45px;
   vertical-align: top;
   line-height: 25px;
 }
-main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn {
+main .about_items_2r_content .about_items_content_btn {
   display: flex;
   flex-wrap: wrap;
   gap: 38px;
   margin-top: 67px;
   align-items: center;
 }
-main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn button {
+main .about_items_2r_content .about_items_content_btn button {
   padding: 13px 21px;
   color: var(--main-tx-color);
   font-size: 16px;
@@ -349,11 +456,11 @@ main .about .about_items .about_items_2r .about_items_2r_content .about_items_co
   border-image-slice: 10;
   border-radius: 20px;
 }
-main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn button:hover {
+main .about_items_2r_content .about_items_content_btn button:hover {
   background-color: rgba(110, 107, 107, 0.7137254902);
   color: #FFFFFF;
 }
-main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn a {
+main .about_items_2r_content .about_items_content_btn a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
@@ -361,13 +468,13 @@ main .about .about_items .about_items_2r .about_items_2r_content .about_items_co
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn a:hover {
+main .about_items_2r_content .about_items_content_btn a:hover {
   text-decoration: underline;
 }
-main .about .about_items .about_items_2r .laptop {
+main .about_items_2r .laptop {
   padding-left: 33px;
 }
-main .about .about_items .about_items_2r .laptop img {
+main .about_items_2r .laptop img {
   max-width: 100%;
   height: auto;
 }
@@ -484,24 +591,24 @@ main .reviews {
   /*aspect-ratio: 1450/851;*/
   object-fit: contain;
 }
-main .reviews .reviews_background {
+main .reviews_background {
   background: linear-gradient(180deg, rgba(15, 14, 14, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
-main .reviews .reviews_background .reviews_background_descrip {
+main .reviews_background_descrip {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   padding-bottom: 138px;
 }
-main .reviews .reviews_background .reviews_background_descrip h2 {
+main .reviews_background_descrip h2 {
   color: var(--main-tx-color);
   font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain {
+main .reviews_background_descrip_contain {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   border-radius: 61px;
@@ -513,28 +620,28 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   box-sizing: border-box;
   padding: 68px 170px 50px 60px;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img {
+main .reviews_background_descrip_contain_img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .photo {
+main .reviews_background_descrip_contain_img .photo {
   border-radius: 40px;
   margin-bottom: 24px;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .photo img {
+main .reviews_background_descrip_contain_img .photo img {
   max-width: 100%;
   height: auto;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .nav_arrow {
+main .reviews_background_descrip_contain_img .nav_arrow {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 22px;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_content {
+main .reviews_background_descrip_contain_content {
   padding-top: 27px;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_content p {
+main .reviews_background_descrip_contain_content p {
   padding-top: 10px;
   color: var(--main-tx-color);
   font-size: 16px;
@@ -543,7 +650,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   max-width: 443px;
   line-height: 131%;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_content h4 {
+main .reviews_background_descrip_contain_content h4 {
   padding-top: 34px;
   color: var(--main-tx-color);
   font-size: 18px;
@@ -551,7 +658,7 @@ main .reviews .reviews_background .reviews_background_descrip .reviews_backgroun
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-main .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_content h5 {
+main .reviews_background_descrip_contain_content h5 {
   padding-top: 6px;
   color: var(--main-tx-color);
   font-size: 18px;
@@ -569,22 +676,22 @@ main .requirements {
   height: auto;
   object-fit: contain;
 }
-main .requirements .requirements_background {
+main .requirements_background {
   background: linear-gradient(180deg, rgba(64, 64, 64, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
-main .requirements .requirements_background_descrip {
+main .requirements_background_descrip {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .requirements .requirements_background_descrip h2 {
+main .requirements_background_descrip h2 {
   color: var(--main-tx-color);
   font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-main .requirements .requirements_background_descrip_contain {
+main .requirements_background_descrip_contain {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -593,11 +700,11 @@ main .requirements .requirements_background_descrip_contain {
   padding: 50px 70px;
   width: 100%;
 }
-main .requirements .requirements_background_descrip_contain_img {
+main .requirements_background_descrip_contain_img {
   position: relative;
   flex-basis: 650px;
 }
-main .requirements .requirements_background_descrip_contain_img .background {
+main .requirements_background_descrip_contain_img .background {
   position: relative;
   top: 0px;
   left: -3%;
@@ -605,21 +712,21 @@ main .requirements .requirements_background_descrip_contain_img .background {
   max-width: 55%;
   height: auto;
 }
-main .requirements .requirements_background_descrip_contain_img .audi {
+main .requirements_background_descrip_contain_img .audi {
   position: absolute;
   max-width: 100%;
   height: auto;
   left: 0;
   z-index: 11;
 }
-main .requirements .requirements_background_descrip_contain_content {
+main .requirements_background_descrip_contain_content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 44px;
   padding-left: 80px;
 }
-main .requirements .requirements_background_descrip_contain_content_list {
+main .requirements_background_descrip_contain_content_list {
   margin-top: 0;
   /*ul{
       color: var(--main-tx-color);
@@ -645,12 +752,12 @@ main .requirements .requirements_background_descrip_contain_content_list {
       }
   }*/
 }
-main .requirements .requirements_background_descrip_contain_content_link {
+main .requirements_background_descrip_contain_content_link {
   display: flex;
   flex-direction: row;
   gap: 27px;
 }
-main .requirements .requirements_background .requirements_background_join {
+main .requirements_background_join {
   position: relative;
   background-image: url("images/main-page/background_join.jpg");
   max-width: 1450px;
@@ -659,10 +766,10 @@ main .requirements .requirements_background .requirements_background_join {
   /*aspect-ratio: 1450/348;*/
   object-fit: contain;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond {
+main .requirements_background_join_fond {
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
+main .requirements_background_join_fond .contain {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -670,18 +777,18 @@ main .requirements .requirements_background .requirements_background_join .requi
   gap: 16px;
   padding: 86px 132px;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content {
+main .requirements_background_join_fond .contain_content {
   max-width: 736px;
   padding: 0;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content h2 {
+main .requirements_background_join_fond .contain_content h2 {
   color: var(--main-tx-color);
   font-size: 36px;
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 4px;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content p {
+main .requirements_background_join_fond .contain_content p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-weight: 600;
@@ -690,10 +797,10 @@ main .requirements .requirements_background .requirements_background_join .requi
   opacity: 0.6;
   margin-top: 27px;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form {
+main .requirements_background_join_fond .contain_submit form {
   max-width: 343px;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=text] {
+main .requirements_background_join_fond .contain_submit form input[type=text] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   padding: 15px 201px 16px 34px;
@@ -702,7 +809,7 @@ main .requirements .requirements_background .requirements_background_join .requi
   width: 100%;
   box-sizing: border-box;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=tel] {
+main .requirements_background_join_fond .contain_submit form input[type=tel] {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   padding: 15px 44px 16px 44px;
@@ -711,7 +818,7 @@ main .requirements .requirements_background .requirements_background_join .requi
   width: 100%;
   box-sizing: border-box;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=submit] {
+main .requirements_background_join_fond .contain_submit form input[type=submit] {
   padding: 16px 85px;
   max-width: 343px;
   border: 0;
@@ -723,11 +830,11 @@ main .requirements .requirements_background .requirements_background_join .requi
   width: 100%;
   box-sizing: border-box;
 }
-main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .containt_submit form input[type=submit]:hover {
+main .requirements_background_join_fond .contain_submit form input[type=submit]:hover {
   background-color: rgba(110, 107, 107, 0.7137254902);
   color: #FFFFFF;
 }
-main .requirements .requirements_background .requirements_background_map h2 {
+main .requirements_background_map h2 {
   color: var(--main-tx-color);
   font-size: 36px;
   font-weight: 700;
@@ -737,10 +844,10 @@ main .requirements .requirements_background .requirements_background_map h2 {
   margin-top: 114px;
   margin-bottom: 32px;
 }
-main .requirements .requirements_background .requirements_background_map .map-container {
+main .requirements_background_map .map-container {
   position: relative;
 }
-main .requirements .requirements_background .requirements_background_map .map-container .map-overlay {
+main .requirements_background_map .map-container .map-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -753,7 +860,7 @@ main .requirements .requirements_background .requirements_background_map .map-co
   z-index: 1001;
   backdrop-filter: grayscale(1) invert(1);
 }
-main .requirements .requirements_background .requirements_background_map .map-container .map-here iframe {
+main .requirements_background_map .map-container .map-here iframe {
   max-width: 100%;
   height: auto;
   aspect-ratio: 1450/348;
@@ -769,24 +876,24 @@ main .contacts {
   /*aspect-ratio: 1450/319;*/
   object-fit: contain;
 }
-main .contacts .contacts_background {
+main .contacts_background {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%), rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   padding: 50px 116px 76px 132px;
 }
-main .contacts .contacts_background .contacts_background_header {
+main .contacts_background_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-main .contacts .contacts_background .contacts_background_header h2 {
+main .contacts_background_header h2 {
   color: var(--main-tx-color);
   font-size: var(--main-bold-size);
   font-weight: 700;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-main .contacts .contacts_background .contacts_background_header p {
+main .contacts_background_header p {
   color: var(--main-tx-color);
   font-size: 16px;
   font-weight: 600;
@@ -795,10 +902,10 @@ main .contacts .contacts_background .contacts_background_header p {
   opacity: 0.4;
   margin-top: 27px;
 }
-main .contacts .contacts_background .contacts_background_header img {
+main .contacts_background_header img {
   margin-top: -12px;
 }
-main .contacts .contacts_background .contacts_background_connect {
+main .contacts_background_connect {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -812,7 +919,7 @@ main .contacts .contacts_background .contacts_background_connect {
   font-weight: 700;
   font-size: 18px;
 }
-main .contacts .contacts_background .contacts_background_connect .comments {
+main .contacts_background_connect .comments {
   font-size: 16px;
   opacity: 0.4;
 }
@@ -882,6 +989,25 @@ footer .footer_extra .footer_extra_network .footer_extra_network_img {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+footer .footer_extra .footer_extra_network .footer_extra_network_img .teleg {
+  border: 0;
+  background-color: transparent;
+  width: 29px;
+  height: 31px;
+  border-radius: 50%;
+}
+footer .footer_extra .footer_extra_network .footer_extra_network_img .teleg:hover {
+  box-shadow: rgba(182, 179, 179, 0.24) 0px 3px 8px;
+}
+footer .footer_extra .footer_extra_network .footer_extra_network_img .inst {
+  border: 0;
+  background-color: transparent;
+  width: 25px;
+  height: 24px;
+}
+footer .footer_extra .footer_extra_network .footer_extra_network_img .inst:hover {
+  box-shadow: rgba(182, 179, 179, 0.24) 0px 3px 8px;
 }
 footer .footer_extra .footer_extra_documents {
   display: flex;
@@ -1009,7 +1135,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   height: auto;
   object-fit: contain;
 }
-.delivery_about .delivery_about_items {
+.delivery_about_items {
   background-color: rgba(41, 39, 39, 0.7);
   display: flex;
   flex-direction: row;
@@ -1017,7 +1143,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   gap: 33px;
   padding: 103px 60px 92px 87px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein {
+.delivery_about_items_contein {
   max-width: 732px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
@@ -1025,10 +1151,10 @@ footer .footer_extra .footer_extra_documents p a:hover {
   padding: 44px 35px 47px 53px;
   margin-right: 33px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content {
+.delivery_about_items_contein_content {
   position: relative;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content h3 {
+.delivery_about_items_contein_content h3 {
   color: var(--main-tx-color);
   font-size: 26px;
   font-weight: 700;
@@ -1037,20 +1163,20 @@ footer .footer_extra .footer_extra_documents p a:hover {
   margin-bottom: 40px;
   letter-spacing: 5px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul {
+.delivery_about_items_contein_content ul {
   opacity: 0.6;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content ul li {
+.delivery_about_items_contein_content ul li {
   max-width: 510px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn {
+.delivery_about_items_contein_content .about_items_content_btn {
   display: flex;
   flex-wrap: wrap;
   gap: 38px;
   margin-top: 67px;
   align-items: center;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn button {
+.delivery_about_items_contein_content .about_items_content_btn button {
   padding: 13px 21px;
   color: var(--main-tx-color);
   font-size: 16px;
@@ -1062,11 +1188,11 @@ footer .footer_extra .footer_extra_documents p a:hover {
   border-image-slice: 10;
   border-radius: 20px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn button:hover {
+.delivery_about_items_contein_content .about_items_content_btn button:hover {
   background-color: rgba(110, 107, 107, 0.7137254902);
   color: #FFFFFF;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn a {
+.delivery_about_items_contein_content .about_items_content_btn a {
   text-decoration: none;
   color: var(--main-tx-color);
   font-size: 18px;
@@ -1074,34 +1200,43 @@ footer .footer_extra .footer_extra_documents p a:hover {
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 1px;
 }
-.delivery_about .delivery_about_items .delivery_about_items_contein .delivery_about_items_contein_content .about_items_content_btn a:hover {
+.delivery_about_items_contein_content .about_items_content_btn a:hover {
   text-decoration: underline;
 }
-.delivery_about .delivery_about_items .about_image .background_moto {
+.delivery_about_items .about_image {
   position: relative;
+  flex-basis: 516px;
 }
-.delivery_about .delivery_about_items .about_image .background_moto img {
-  max-width: 100%;
+.delivery_about_items .about_image .background_moto {
+  position: relative;
+  width: 90%;
   height: auto;
 }
-.delivery_about .delivery_about_items .about_image .moto {
+.delivery_about_items .about_image .background_moto img {
+  max-width: 50%;
+  height: auto;
+}
+.delivery_about_items .about_image .moto {
   position: absolute;
   z-index: 10;
-  left: 60%;
-  top: 14%;
-}
-.delivery_about .delivery_about_items .about_image .moto img {
-  max-width: 100%;
+  left: 0%;
+  width: 100%;
   height: auto;
 }
-.delivery_about .delivery_about_items .about_image .bag {
+.delivery_about_items .about_image .moto img {
+  max-width: 50%;
+  height: auto;
+}
+.delivery_about_items .about_image .bag {
   position: absolute;
   z-index: 11;
-  left: 79%;
-  top: 23%;
+  left: 55%;
+  top: 11%;
+  width: 50%;
+  height: auto;
 }
-.delivery_about .delivery_about_items .about_image .bag img {
-  max-width: 100%;
+.delivery_about_items .about_image .bag img {
+  max-width: 40%;
   height: auto;
 }
 
@@ -1218,71 +1353,79 @@ footer .footer_extra .footer_extra_documents p a:hover {
   height: auto;
   object-fit: contain;
 }
-.delivery_faq .delivery_faq_background {
+.delivery_faq_background {
   background: linear-gradient(180deg, rgba(15, 14, 14, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain {
+.delivery_faq_background_contain {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   padding-bottom: 137px;
+  /*.accordion{
+      border-radius: 41px;
+      overflow: hidden;
+      max-width: 1215px;
+      margin-top: 45px;
+
+      &_item{
+          background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+          backdrop-filter: blur(2px);
+
+          &.active{
+
+              .accordion_item_header{
+                  color: #E9BC47;
+                  &::after{
+                      transform: rotate(90deg);
+                  }
+              }
+              .accordion_item_content{
+                  max-height: 100vh;
+                  padding-bottom: 50px;
+              }
+
+          }
+          &_header{
+              font-size: 26px;
+              font-weight: 700;
+              font-family: 'RF Dewi Expanded', sans-serif;
+              color: var(--main-tx-color);
+              display: flex;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding: 26px 30px 26px 50px;
+              cursor: pointer;
+              &::after{
+                  content: "\276F";
+                  width: 30px;
+                  height: 15px;
+                  text-align: center;
+                  transition: all 300ms;
+              }
+          }
+
+
+          &_content{
+              font-size: 20px;
+              font-weight: 600;
+              font-family: 'RF Dewi Expanded', sans-serif;
+              color: var(--main-tx-color);
+              padding-left: 50px;
+              padding-right: 17px;
+              max-height: 0;
+              overflow: hidden;
+              transition: all 500ms;
+          }
+      }
+  }*/
 }
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain h2 {
+.delivery_faq_background_contain h2 {
   color: var(--main-tx-color);
   font-size: var(--main-bold-size);
   padding-top: 66px;
   font-family: "RF Dewi Expanded", sans-serif;
   letter-spacing: 6px;
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion {
-  border-radius: 41px;
-  overflow: hidden;
-  max-width: 1215px;
-  margin-top: 45px;
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item {
-  background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(2px);
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item.active.accordion_item_header {
-  color: #E9BC47;
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item.active.accordion_item_header::after {
-  transform: rotate(90deg);
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item.active.accordion_item_content {
-  max-height: 100vh;
-  padding-bottom: 50px;
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .accordion_item_header {
-  font-size: 26px;
-  font-weight: 700;
-  font-family: "RF Dewi Expanded", sans-serif;
-  color: var(--main-tx-color);
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 26px 30px 26px 50px;
-  cursor: pointer;
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .accordion_item_header::after {
-  content: "❯";
-  width: 30px;
-  height: 15px;
-  text-align: center;
-  transition: all 300ms;
-}
-.delivery_faq .delivery_faq_background .delivery_faq_background_contain .accordion .accordion_item .accordion_item_content {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "RF Dewi Expanded", sans-serif;
-  color: var(--main-tx-color);
-  padding-left: 50px;
-  padding-right: 17px;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 500ms;
 }
 
 @media (min-width: 1110px) {
@@ -1292,10 +1435,10 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .open_menu {
     display: none;
   }
-  .advantages .advantages_background .advantages_descrip .mob_version {
+  .advantages_background .advantages_descrip .mob_version {
     display: none;
   }
-  .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .mob_version_name {
+  .reviews_background_descrip_contain_img .mob_version_name {
     display: none;
   }
 }
@@ -1309,10 +1452,10 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .open_menu {
     display: none;
   }
-  .advantages .advantages_background .advantages_descrip .mob_version {
+  .advantages_background_descrip .mob_version {
     display: none;
   }
-  .reviews .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .mob_version_name {
+  .reviews_background .reviews_background_descrip .reviews_background_descrip_contain .reviews_background_descrip_contain_img .mob_version_name {
     display: none;
   }
 }
@@ -1846,6 +1989,65 @@ footer .footer_extra .footer_extra_documents p a:hover {
     flex-wrap: wrap;
     gap: 60px;
     margin-top: 66px;
+  }
+  .delivery_about_items {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 33px;
+    padding: 69px 27px 35px 30px;
+  }
+  .delivery_about_items_contein {
+    background: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    padding: 0;
+    margin-right: 0;
+  }
+  .delivery_about_items_contein_content h3 {
+    font-size: 20px;
+  }
+  .delivery_about_items_contein_content .about_items_content_btn a {
+    display: none;
+  }
+  .delivery_about_items .about_image .bag {
+    top: 7%;
+  }
+  .delivery_advantages .delivery_advantages_background {
+    backdrop-filter: blur(6px);
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip {
+    align-items: center;
+    justify-content: center;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content {
+    flex-direction: row;
+    gap: 24px;
+    background: none;
+    backdrop-filter: none;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row {
+    flex-direction: column;
+    gap: 44px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item {
+    height: 150px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item p {
+    font-size: 14px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item {
+    height: 150px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item p {
+    font-size: 14px;
   }
   /* media желт*/
 }

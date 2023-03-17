@@ -13,19 +13,19 @@ window.addEventListener("DOMContentLoaded", function () {
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });*/
-    window.addEventListener("DOMContentLoaded", function(){
-        const accItems = document.querySelectorAll(".accordion_item_header");
-        for(let i=0; i < accItems.length; i++){
-            accItems[i].addEventListener("click", function(event){
-                
-                [].forEach.call(accItems, function(element){
-                    element.closest(".accordion_item").classList.remove(".active")
-                });
+    const accItems = document.querySelectorAll(".accordion_item_header");
+    for(let i=0; i < accItems.length; i++){
+        accItems[i].addEventListener("click", function(event){
+            const currentTarget = event.target.closest(".accordion_item");
 
-                const root = event.target.closest(".accordion_item");
-                root.classList.toggle(".active");
-
+            [].forEach.call(accItems, function(element){
+                const item = element.closest(".accordion_item");
+                if(item !== currentTarget){
+                    element.closest(".accordion_item").classList.remove("active");
+                }
             });
-        }
+
+            currentTarget.classList.toggle("active");
+
+        });
     }
-    )
