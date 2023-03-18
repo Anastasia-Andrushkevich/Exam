@@ -1,0 +1,17 @@
+@import "./libs/intl-tel-input/intlTelInput.min.css";
+
+.iti__flag {background-image: url("./libs/intl-tel-input/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti__flag {background-image: url("./libs/intl-tel-input/flags@2x.png");}
+}
+.iti--allow-dropdown{
+    width: 343px;
+    margin-bottom: 18px;
+}
+@media (min-width:375px) and (max-width:600px){
+    .iti--allow-dropdown{
+        width: 326px;
+        
+    }
+}

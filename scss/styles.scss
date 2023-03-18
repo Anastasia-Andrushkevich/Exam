@@ -1,3 +1,4 @@
+@import "_tel_input";
 *{
     --main-tx-color: #FFFFFF; 
     --main-bold-size: 45px;
@@ -175,7 +176,7 @@ main{
                 }
                 .accordion_item_content{
                     max-height: 100vh;
-                    padding-bottom: 50px;
+                    padding-bottom: 41px;
                 }
             
             }
@@ -1448,10 +1449,8 @@ footer{
                     text-align: center;
                     margin-bottom: 88px;
                 }
-                button{
-                    border: 0;
-                    background: transparent;
-                    
+                a{
+                    text-align: center;
                 }
                 .img_chat{
                     display: flex;   
@@ -1673,6 +1672,29 @@ footer{
     }
         main{
     
+            .accordion{            
+                &_item{
+                    &.active{
+                        .accordion_item_content{
+                            max-height: 100vh;
+                            padding-bottom: 16px;
+                        }
+                    }
+                    &_header{
+                        font-size: 23px;
+                        padding: 29px 30px 17px 29px;
+                        &::after{
+                            width: 24px;
+                            height: 12px;
+                        }
+                    }
+                    &_content{
+                        font-size: 16px;
+                        padding-left: 29px;
+                        padding-right: 99px;
+                    }
+                }
+            }
        
         .title{
             .title-background{  
@@ -1983,6 +2005,8 @@ footer{
         &_items{
             flex-direction: column;
             padding-bottom: 120px;
+            flex-wrap: wrap;
+            gap: 54px;
             &_contein{  
                 background: none; 
                 border-radius: 0;
@@ -2070,34 +2094,48 @@ footer{
                 font-size: 30px;
                 padding-top: 57px;
             }
-            .accordion{            
-                &_item{
-                    &.active{
-                        .accordion_item_content{
-                            max-height: 100vh;
-                            padding-bottom: 16px;
-                        }
-                    }
-                    &_header{
-                        font-size: 23px;
-                        padding: 29px 30px 17px 29px;
-                        &::after{
-                            width: 24px;
-                            height: 12px;
-                        }
-                    }
-                    &_content{
-                        font-size: 16px;
-                        padding-left: 29px;
-                        padding-right: 99px;
-                    }
+            
+            }
+        }
+    }    
+    .faq_title{
+        &_background{
+            &_content{
+                h1{
+                    font-size: 90px;
                 }
+            }
+        }
+    }
+    .faq{
+        &_background{
+            &_contain{
+                padding-bottom: 90px;
+            h2{
+                font-size: 30px;
+                padding-top: 57px;
             }
             
             }
         }
     }    
-    
+    .faq_request{
+            &_background{            
+                .contain{
+                    padding: 74px 24px 73px 25px;
+                    
+                    &_content{
+                        h2{
+                            font-size: 25px;
+                            letter-spacing: 4px;
+                        }
+                        p{
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+        }
 } 
 @media (min-width:375px) and (max-width:600px){
    .header{
@@ -2123,7 +2161,29 @@ footer{
 }
     main{
 
-   
+        .accordion{            
+            &_item{
+                &.active{
+                    .accordion_item_content{
+                        max-height: 100vh;
+                        padding-bottom: 16px;
+                    }
+                }
+                &_header{
+                    font-size: 20px;
+                    padding: 29px 30px 17px 29px;
+                    &::after{
+                        width: 24px;
+                        height: 12px;
+                    }
+                }
+                &_content{
+                    font-size: 16px;
+                    padding-left: 29px;
+                    padding-right: 99px;
+                }
+            }
+        }
     .title{
         .title-background{  
             .title_content{        
@@ -2358,7 +2418,7 @@ footer{
             .requirements_background_join{
                 .requirements_background_join_fond{
                     .contain{
-                        flex-direction: column;
+                        
                         padding: 74px 29px;
                         .contain_content{
                             h2{
@@ -2460,6 +2520,8 @@ footer{
 .delivery_about{
     &_items{
         padding: 69px 27px 35px 30px;
+        flex-wrap: wrap;
+        gap: 54px;
         &_contein{  
             background: none; 
             border-radius: 0;
@@ -2536,31 +2598,60 @@ footer{
             font-size: 30px;
             padding-top: 57px;
         }
-        .accordion{            
-            &_item{
-                &.active{
-                    .accordion_item_content{
-                        max-height: 100vh;
-                        padding-bottom: 16px;
-                    }
-                }
-                &_header{
-                    font-size: 20px;
-                    padding: 29px 30px 17px 29px;
-                    &::after{
-                        width: 24px;
-                        height: 12px;
-                    }
-                }
-                &_content{
-                    font-size: 16px;
-                    padding-left: 29px;
-                    padding-right: 99px;
+        }
+    }
+}
+.faq_title{
+    &_background{
+        &_content{
+            h1{
+                font-size: 70px;
+            }
+            .img_chat{
+                padding: 8px 23px 143px 0;
+                button{
+                width: 43px;
+                height: 43px;
+                border-radius: 50%;
+                border: 0;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(2px);
+                img{
+                    width: 25px;
+                    height: 25px;
                 }
             }
+            }
+        }
+    }
+}
+.faq{
+    &_background{
+        &_contain{
+            padding-bottom: 90px;
+        h2{
+            font-size: 30px;
+            padding-top: 57px;
         }
         
         }
     }
-}
+}    
+.faq_request{
+        &_background{            
+            .contain{
+                padding: 74px 24px 73px 25px;
+                
+                &_content{
+                    h2{
+                        font-size: 20px;
+                        letter-spacing: 4px;
+                    }
+                    p{
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
 /* media желт*/} 

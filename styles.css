@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@import "./libs/intl-tel-input/intlTelInput.min.css";
+.iti__flag {
+  background-image: url("./libs/intl-tel-input/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("./libs/intl-tel-input/flags@2x.png");
+  }
+}
+.iti--allow-dropdown {
+  width: 343px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+  .iti--allow-dropdown {
+    width: 326px;
+  }
+}
 * {
   --main-tx-color: #FFFFFF;
   --main-bold-size: 45px;
@@ -166,7 +186,7 @@ main .accordion_item.active .accordion_item_header::after {
 }
 main .accordion_item.active .accordion_item_content {
   max-height: 100vh;
-  padding-bottom: 50px;
+  padding-bottom: 41px;
 }
 main .accordion_item_header {
   font-size: 26px;
@@ -1395,9 +1415,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
   text-align: center;
   margin-bottom: 88px;
 }
-.faq_title_background_content button {
-  border: 0;
-  background: transparent;
+.faq_title_background_content a {
+  text-align: center;
 }
 .faq_title_background_content .img_chat {
   display: flex;
@@ -1576,6 +1595,23 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   main {
     /*main фиолет*/
+  }
+  main .accordion_item.active .accordion_item_content {
+    max-height: 100vh;
+    padding-bottom: 16px;
+  }
+  main .accordion_item_header {
+    font-size: 23px;
+    padding: 29px 30px 17px 29px;
+  }
+  main .accordion_item_header::after {
+    width: 24px;
+    height: 12px;
+  }
+  main .accordion_item_content {
+    font-size: 16px;
+    padding-left: 29px;
+    padding-right: 99px;
   }
   main .title .title-background .title_content h1 {
     font-size: 30px;
@@ -1833,6 +1869,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .delivery_about_items {
     flex-direction: column;
     padding-bottom: 120px;
+    flex-wrap: wrap;
+    gap: 54px;
   }
   .delivery_about_items_contein {
     background: none;
@@ -1906,22 +1944,25 @@ footer .footer_extra .footer_extra_documents p a:hover {
     font-size: 30px;
     padding-top: 57px;
   }
-  .delivery_faq_background_contain .accordion_item.active .accordion_item_content {
-    max-height: 100vh;
-    padding-bottom: 16px;
+  .faq_title_background_content h1 {
+    font-size: 90px;
   }
-  .delivery_faq_background_contain .accordion_item_header {
-    font-size: 23px;
-    padding: 29px 30px 17px 29px;
+  .faq_background_contain {
+    padding-bottom: 90px;
   }
-  .delivery_faq_background_contain .accordion_item_header::after {
-    width: 24px;
-    height: 12px;
+  .faq_background_contain h2 {
+    font-size: 30px;
+    padding-top: 57px;
   }
-  .delivery_faq_background_contain .accordion_item_content {
-    font-size: 16px;
-    padding-left: 29px;
-    padding-right: 99px;
+  .faq_request_background .contain {
+    padding: 74px 24px 73px 25px;
+  }
+  .faq_request_background .contain_content h2 {
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+  .faq_request_background .contain_content p {
+    margin-top: 16px;
   }
 }
 @media (min-width: 375px) and (max-width: 600px) {
@@ -1945,6 +1986,23 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   main {
     /*main фиолет*/
+  }
+  main .accordion_item.active .accordion_item_content {
+    max-height: 100vh;
+    padding-bottom: 16px;
+  }
+  main .accordion_item_header {
+    font-size: 20px;
+    padding: 29px 30px 17px 29px;
+  }
+  main .accordion_item_header::after {
+    width: 24px;
+    height: 12px;
+  }
+  main .accordion_item_content {
+    font-size: 16px;
+    padding-left: 29px;
+    padding-right: 99px;
   }
   main .title .title-background .title_content {
     padding: 173px 5px 0px 5px;
@@ -2152,7 +2210,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
   }
   main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
-    flex-direction: column;
     padding: 74px 29px;
   }
   main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content h2 {
@@ -2233,6 +2290,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   .delivery_about_items {
     padding: 69px 27px 35px 30px;
+    flex-wrap: wrap;
+    gap: 54px;
   }
   .delivery_about_items_contein {
     background: none;
@@ -2296,22 +2355,40 @@ footer .footer_extra .footer_extra_documents p a:hover {
     font-size: 30px;
     padding-top: 57px;
   }
-  .delivery_faq_background_contain .accordion_item.active .accordion_item_content {
-    max-height: 100vh;
-    padding-bottom: 16px;
+  .faq_title_background_content h1 {
+    font-size: 70px;
   }
-  .delivery_faq_background_contain .accordion_item_header {
+  .faq_title_background_content .img_chat {
+    padding: 8px 23px 143px 0;
+  }
+  .faq_title_background_content .img_chat button {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+  }
+  .faq_title_background_content .img_chat button img {
+    width: 25px;
+    height: 25px;
+  }
+  .faq_background_contain {
+    padding-bottom: 90px;
+  }
+  .faq_background_contain h2 {
+    font-size: 30px;
+    padding-top: 57px;
+  }
+  .faq_request_background .contain {
+    padding: 74px 24px 73px 25px;
+  }
+  .faq_request_background .contain_content h2 {
     font-size: 20px;
-    padding: 29px 30px 17px 29px;
+    letter-spacing: 4px;
   }
-  .delivery_faq_background_contain .accordion_item_header::after {
-    width: 24px;
-    height: 12px;
-  }
-  .delivery_faq_background_contain .accordion_item_content {
-    font-size: 16px;
-    padding-left: 29px;
-    padding-right: 99px;
+  .faq_request_background .contain_content p {
+    margin-top: 16px;
   }
   /* media желт*/
 }

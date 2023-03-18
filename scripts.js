@@ -7,12 +7,14 @@ window.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".mob_menu").classList.remove("mob_menu_visible");
         }
     });
-});
-/*const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });*/
+
+    const phoneInputField = document.querySelector("#phone");
+    if(phoneInputField){
+        const phoneInput = window.intlTelInput(phoneInputField, {
+       // utilsScript:
+        //    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    }
     const accItems = document.querySelectorAll(".accordion_item_header");
     for(let i=0; i < accItems.length; i++){
         accItems[i].addEventListener("click", function(event){
@@ -29,3 +31,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
         });
     }
+});    
