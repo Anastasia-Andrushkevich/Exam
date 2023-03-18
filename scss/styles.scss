@@ -1132,8 +1132,6 @@ footer{
             background-color: rgb(41 39 39 / 70%);
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            gap: 33px;
             padding: 103px 60px 92px 87px;
             &_contein{  
                 max-width: 732px;
@@ -1425,7 +1423,168 @@ footer{
             }
         }
     }
+    .faq_title{
+        position: relative;   
+        background-image: url('images/faq/faq_title.jpg');
+        background-repeat: repeat-y;
+        max-width: 1450px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+            &_background{  
+                background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%,rgba(0, 0, 0, 0.36) 100%);
+        
+            &_content{
+                display: flex;    
+                flex-direction: column; 
+                box-sizing: border-box;   
+                padding-top: 290px;    
+                h1{
+                    color: var(--main-tx-color);
+                    font-size: 113px;
+                    font-weight: 700;
+                    letter-spacing: 9px;
+                    font-family: 'RF Dewi', sans-serif;
+                    text-align: center;
+                    margin-bottom: 88px;
+                }
+                button{
+                    border: 0;
+                    background: transparent;
+                    
+                }
+                .img_chat{
+                    display: flex;   
+                    max-width: 1450px; 
+                    justify-content: end;
+                    padding: 77px 46px 60px 0;
+                    button{
+                        width: 83px;
+                        height: 83px;
+                        border-radius: 50%;
+                        border: 0;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                        backdrop-filter: blur(2px);
+                        &:hover{
+                            background-color: #3f3e3eda;
+                        }
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                    
+                }
+            } 
+    }
+    .faq{
+        position: relative;   
+        background-image: url('images/faq/faq_accordion.jpg');
+        background-repeat: repeat-y;
+        max-width: 1450px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        &_background{
+            background-color: rgba(77, 74, 74, 0.85);
+            &_contain{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+                padding-bottom: 160px;
+            h2{
+                color: var(--main-tx-color);
+                font-size: var(--main-bold-size);
+                padding-top: 66px;
+                font-family: 'RF Dewi Expanded', sans-serif;
+                letter-spacing: 6px;
+            }
+            }
+        }
+    }
+    .faq_request{
+        position: relative;   
+            background-image: url('images/faq/faq_request.jpg');
+            max-width: 1450px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
 
+            &_background{
+                background: linear-gradient(180deg, rgba(30, 30, 30, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
+                
+                .contain{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    gap:16px;
+                    padding: 86px 132px;
+                    
+                    &_content{
+                        max-width: 736px;
+                        padding: 0;
+                        h2{
+                            color: var(--main-tx-color);
+                            font-size: 36px;
+                            font-weight: 700;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            letter-spacing: 4px;
+                        }
+                        p{
+                            color: var(--main-tx-color);
+                            font-size: 16px;
+                            font-weight: 600;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            letter-spacing: 1px;
+                            opacity: 0.6;
+                            margin-top: 27px;
+                        }
+                    }
+                    &_submit{
+                        form{
+                        max-width: 343px;
+                        input[type="text"]{
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                            backdrop-filter: blur(2px);
+                            padding: 15px 201px 16px 34px;
+                            margin-bottom: 18px;
+                            border: 0;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        input[type="tel"]{
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                            backdrop-filter: blur(2px);
+                            padding: 15px 44px 16px 44px;
+                            margin-bottom: 18px;
+                            border: 0;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        input[type="submit"]{
+                            padding: 16px 85px;
+                            max-width: 343px;
+                            border: 0;
+                            font-size: 16px;
+                            font-weight: 700;
+                            background-color: #FFFFFF;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            letter-spacing: 1px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            &:hover{
+                                background-color: #6e6b6bb6;
+                                color: #FFFFFF;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
 @media (min-width:1110px){
     .mob_menu{
         display: none;
@@ -1783,7 +1942,161 @@ footer{
             }
         }
     }
+    .delivery_title{
+        .delivery_title-background{  
+            .delivery_title_content{        
+                padding-top: 203px;     
+                h1{
+                        font-size: 30px;
+                        letter-spacing: 0px;
+                    }
+                    .delivery_title_btn{
+                        margin-top: 0px;
+                        .btn_applicat{
+                            font-size: 13px;
+                            padding: 13px 11px;
+                            max-width: 176px;
+                        }
+                        a{
+                            display: none;
+                        }
+                    }
+                    .img_chat{
+                        padding: 8px 23px 60px 0;
+                    button{
+                        width: 43px;
+                        height: 43px;
+                        border-radius: 50%;
+                        border: 0;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                        backdrop-filter: blur(2px);
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    }
+        }
+    }
+    }
+    .delivery_about{
+        &_items{
+            flex-direction: column;
+            padding-bottom: 120px;
+            &_contein{  
+                background: none; 
+                border-radius: 0;
+                backdrop-filter: none;
+                padding: 0;  
+                margin-right: 0;
+            &_content{
+                h3{
+                    font-size: 20px;
+                }
+                .about_items_content_btn{
+                    a{
+                        display: none;
+                    }
+                }
+            }
+           } 
+           .about_image{
+            .background_moto{
+                width: 62%;
+            }
+            .moto{
+                left: 0%;
+                top: -9%;
+                width: 70%;
+            }
+            .bag{
+                left: 37%;
+                top: 6%;
+                width: 35%;
+                
+            }
+        } 
+        }
+    }
+    .delivery_advantages{
+        .delivery_advantages_background{
+            backdrop-filter: blur(6px);
+            .delivery_advantages_descrip{
+                align-items: center;
+                justify-content: center;
+                h2{
+                    font-size: 30px;
+                    text-align: center;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                
+                }
+                .delivery_advantages_descrip_content{
+                    flex-direction: row;
+                    gap: 24px;
+                    background: none;
+                    backdrop-filter: none;
+                    .delivery_advantages_descrip_content_first_row{
+                        flex-direction: column;
+                        gap: 44px;
+                        .delivery_advantages_descrip_content_first_row_item{
+                            height: 150px;
+                            p{
+                            font-size: 14px;
+                            }
+                        }
+                    }
+                    .delivery_advantages_descrip_content_two_row{
+                        flex-direction: column;
+                        gap: 45px;
+                        .delivery_advantages_descrip_content_two_row_item{
+                            height: 150px;
+                            p{
+                            font-size: 14px;
+                        } 
+                        }
+                        
+                    }
     
+                }
+            }
+        }
+    }
+    .delivery_faq{
+        &_background{
+            &_contain{
+                padding-bottom: 90px;
+            h2{
+                font-size: 30px;
+                padding-top: 57px;
+            }
+            .accordion{            
+                &_item{
+                    &.active{
+                        .accordion_item_content{
+                            max-height: 100vh;
+                            padding-bottom: 16px;
+                        }
+                    }
+                    &_header{
+                        font-size: 23px;
+                        padding: 29px 30px 17px 29px;
+                        &::after{
+                            width: 24px;
+                            height: 12px;
+                        }
+                    }
+                    &_content{
+                        font-size: 16px;
+                        padding-left: 29px;
+                        padding-right: 99px;
+                    }
+                }
+            }
+            
+            }
+        }
+    }    
     
 } 
 @media (min-width:375px) and (max-width:600px){
@@ -2108,7 +2421,6 @@ footer{
     }
 }
 .delivery_title{
-    background-image: url('images/delivery/delivery_backgroundimage-title_mob.jpg');
     .delivery_title-background{  
         .delivery_title_content{        
             padding-top: 203px;     
@@ -2147,10 +2459,7 @@ footer{
 }
 .delivery_about{
     &_items{
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 33px;
-        padding: 69px 27px 35px 30px;;
+        padding: 69px 27px 35px 30px;
         &_contein{  
             background: none; 
             border-radius: 0;
@@ -2184,6 +2493,9 @@ footer{
             h2{
                 font-size: 30px;
                 text-align: center;
+                padding-left: 17px;
+                padding-right: 17px;
+            
             }
             .delivery_advantages_descrip_content{
                 flex-direction: row;

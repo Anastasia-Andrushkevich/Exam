@@ -1081,8 +1081,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
   background-color: rgba(41, 39, 39, 0.7);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 33px;
   padding: 103px 60px 92px 87px;
 }
 .delivery_about_items_contein {
@@ -1370,6 +1368,163 @@ footer .footer_extra .footer_extra_documents p a:hover {
   letter-spacing: 6px;
 }
 
+.faq_title {
+  position: relative;
+  background-image: url("images/faq/faq_title.jpg");
+  background-repeat: repeat-y;
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.faq_title_background {
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%, rgba(0, 0, 0, 0.36) 100%);
+}
+.faq_title_background_content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 290px;
+}
+.faq_title_background_content h1 {
+  color: var(--main-tx-color);
+  font-size: 113px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  font-family: "RF Dewi", sans-serif;
+  text-align: center;
+  margin-bottom: 88px;
+}
+.faq_title_background_content button {
+  border: 0;
+  background: transparent;
+}
+.faq_title_background_content .img_chat {
+  display: flex;
+  max-width: 1450px;
+  justify-content: end;
+  padding: 77px 46px 60px 0;
+}
+.faq_title_background_content .img_chat button {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  border: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
+.faq_title_background_content .img_chat button:hover {
+  background-color: rgba(63, 62, 62, 0.8549019608);
+}
+.faq_title_background_content .img_chat button img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faq {
+  position: relative;
+  background-image: url("images/faq/faq_accordion.jpg");
+  background-repeat: repeat-y;
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.faq_background {
+  background-color: rgba(77, 74, 74, 0.85);
+}
+.faq_background_contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 160px;
+}
+.faq_background_contain h2 {
+  color: var(--main-tx-color);
+  font-size: var(--main-bold-size);
+  padding-top: 66px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 6px;
+}
+
+.faq_request {
+  position: relative;
+  background-image: url("images/faq/faq_request.jpg");
+  max-width: 1450px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.faq_request_background {
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
+}
+.faq_request_background .contain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+  padding: 86px 132px;
+}
+.faq_request_background .contain_content {
+  max-width: 736px;
+  padding: 0;
+}
+.faq_request_background .contain_content h2 {
+  color: var(--main-tx-color);
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 4px;
+}
+.faq_request_background .contain_content p {
+  color: var(--main-tx-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-top: 27px;
+}
+.faq_request_background .contain_submit form {
+  max-width: 343px;
+}
+.faq_request_background .contain_submit form input[type=text] {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  padding: 15px 201px 16px 34px;
+  margin-bottom: 18px;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.faq_request_background .contain_submit form input[type=tel] {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  padding: 15px 44px 16px 44px;
+  margin-bottom: 18px;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.faq_request_background .contain_submit form input[type=submit] {
+  padding: 16px 85px;
+  max-width: 343px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  font-family: "RF Dewi Expanded", sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.faq_request_background .contain_submit form input[type=submit]:hover {
+  background-color: rgba(110, 107, 107, 0.7137254902);
+  color: #FFFFFF;
+}
+
 @media (min-width: 1110px) {
   .mob_menu {
     display: none;
@@ -1641,6 +1796,132 @@ footer .footer_extra .footer_extra_documents p a:hover {
   footer .footer_extra .footer_extra_documents {
     flex-direction: column;
     gap: 8px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content {
+    padding-top: 203px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content h1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn {
+    margin-top: 0px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn .btn_applicat {
+    font-size: 13px;
+    padding: 13px 11px;
+    max-width: 176px;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .delivery_title_btn a {
+    display: none;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .img_chat {
+    padding: 8px 23px 60px 0;
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .img_chat button {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+  }
+  .delivery_title .delivery_title-background .delivery_title_content .img_chat button img {
+    width: 25px;
+    height: 25px;
+  }
+  .delivery_about_items {
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+  .delivery_about_items_contein {
+    background: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    padding: 0;
+    margin-right: 0;
+  }
+  .delivery_about_items_contein_content h3 {
+    font-size: 20px;
+  }
+  .delivery_about_items_contein_content .about_items_content_btn a {
+    display: none;
+  }
+  .delivery_about_items .about_image .background_moto {
+    width: 62%;
+  }
+  .delivery_about_items .about_image .moto {
+    left: 0%;
+    top: -9%;
+    width: 70%;
+  }
+  .delivery_about_items .about_image .bag {
+    left: 37%;
+    top: 6%;
+    width: 35%;
+  }
+  .delivery_advantages .delivery_advantages_background {
+    backdrop-filter: blur(6px);
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip {
+    align-items: center;
+    justify-content: center;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content {
+    flex-direction: row;
+    gap: 24px;
+    background: none;
+    backdrop-filter: none;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row {
+    flex-direction: column;
+    gap: 44px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item {
+    height: 150px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_first_row .delivery_advantages_descrip_content_first_row_item p {
+    font-size: 14px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item {
+    height: 150px;
+  }
+  .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content .delivery_advantages_descrip_content_two_row .delivery_advantages_descrip_content_two_row_item p {
+    font-size: 14px;
+  }
+  .delivery_faq_background_contain {
+    padding-bottom: 90px;
+  }
+  .delivery_faq_background_contain h2 {
+    font-size: 30px;
+    padding-top: 57px;
+  }
+  .delivery_faq_background_contain .accordion_item.active .accordion_item_content {
+    max-height: 100vh;
+    padding-bottom: 16px;
+  }
+  .delivery_faq_background_contain .accordion_item_header {
+    font-size: 23px;
+    padding: 29px 30px 17px 29px;
+  }
+  .delivery_faq_background_contain .accordion_item_header::after {
+    width: 24px;
+    height: 12px;
+  }
+  .delivery_faq_background_contain .accordion_item_content {
+    font-size: 16px;
+    padding-left: 29px;
+    padding-right: 99px;
   }
 }
 @media (min-width: 375px) and (max-width: 600px) {
@@ -1917,9 +2198,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
     flex-direction: column;
     gap: 8px;
   }
-  .delivery_title {
-    background-image: url("images/delivery/delivery_backgroundimage-title_mob.jpg");
-  }
   .delivery_title .delivery_title-background .delivery_title_content {
     padding-top: 203px;
   }
@@ -1954,9 +2232,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
     height: 25px;
   }
   .delivery_about_items {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 33px;
     padding: 69px 27px 35px 30px;
   }
   .delivery_about_items_contein {
@@ -1985,6 +2260,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip h2 {
     font-size: 30px;
     text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
   }
   .delivery_advantages .delivery_advantages_background .delivery_advantages_descrip .delivery_advantages_descrip_content {
     flex-direction: row;
