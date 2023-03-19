@@ -218,6 +218,7 @@ main{
             }
         }
     }
+/*стили для главной страницы*/
 .title{
     position: relative;   
     background-image: url('images/main-page/title_background.jpg');
@@ -322,7 +323,6 @@ main{
     max-width: 1450px;
     width: 100%;
     height: auto;
-    /*aspect-ratio: 1450/1311;*/
     object-fit: contain;
 
     &_items{
@@ -461,7 +461,6 @@ main{
     max-width: 1450px;
     width: 100%;
     height: auto;
-    /*aspect-ratio: 1450/678;*/
     object-fit: contain;
 
     .advantages_background{
@@ -567,7 +566,6 @@ main{
     max-width: 1450px;
     width: 100%;
     height: auto;
-    /*aspect-ratio: 1450/851;*/
     object-fit: contain;
 
     &_background{
@@ -707,29 +705,6 @@ main{
                     padding-left: 80px;
                     &_list{
                         margin-top: 0;
-                        /*ul{
-                            color: var(--main-tx-color);
-                            font-size: 16px;
-                            font-family: 'RW Dewi', sans-serif;
-                            letter-spacing: 1px;
-                            list-style-type: none;
-                            margin-bottom: 20px;
-
-                            display: flex;
-                            flex-direction: column;
-                            gap:30px;
-                            li{
-                                display: flex;
-                                gap:13px;
-                                &::before{
-                                    color: #3BE893;
-                                    content: "●";
-                                    font-size: 45px;
-                                    vertical-align: top;
-                                    line-height: 25px;
-                                }
-                            }
-                        }*/
                     }
                     &_link{
                         display: flex;
@@ -746,7 +721,6 @@ main{
             max-width: 1450px;
             width: 100%;
             height: auto;
-            /*aspect-ratio: 1450/348;*/
             object-fit: contain;
 
             &_fond{
@@ -869,7 +843,6 @@ main{
     max-width: 1450px;
     width: 100%;
     height: auto;
-    /*aspect-ratio: 1450/319;*/
     object-fit: contain;
 
     &_background{
@@ -1051,7 +1024,7 @@ footer{
         }
     }
 }
-
+/*стили для страницы доставка*/
     .delivery_title{
        position: relative;   
         background-image: url('images/delivery/delivery_backgroundimage-title.jpg');
@@ -1273,7 +1246,6 @@ footer{
         max-width: 1450px;
         width: 100%;
         height: auto;
-        /*aspect-ratio: 1450/678;*/
         object-fit: contain;
     
         .delivery_advantages_background{
@@ -1395,67 +1367,10 @@ footer{
                 font-family: 'RF Dewi Expanded', sans-serif;
                 letter-spacing: 6px;
             }
-            /*.accordion{
-                border-radius: 41px;
-                overflow: hidden;
-                max-width: 1215px;
-                margin-top: 45px;
-                
-                &_item{
-                    background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
-                    backdrop-filter: blur(2px);
-                    
-                    &.active{
-                
-                        .accordion_item_header{
-                            color: #E9BC47;
-                            &::after{
-                                transform: rotate(90deg);
-                            }
-                        }
-                        .accordion_item_content{
-                            max-height: 100vh;
-                            padding-bottom: 50px;
-                        }
-                    
-                    }
-                    &_header{
-                        font-size: 26px;
-                        font-weight: 700;
-                        font-family: 'RF Dewi Expanded', sans-serif;
-                        color: var(--main-tx-color);
-                        display: flex;
-                        justify-content: space-between;
-                        box-sizing: border-box;
-                        padding: 26px 30px 26px 50px;
-                        cursor: pointer;
-                        &::after{
-                            content: "\276F";
-                            width: 30px;
-                            height: 15px;
-                            text-align: center;
-                            transition: all 300ms;
-                        }
-                    }
-                    
-                    
-                    &_content{
-                        font-size: 20px;
-                        font-weight: 600;
-                        font-family: 'RF Dewi Expanded', sans-serif;
-                        color: var(--main-tx-color);
-                        padding-left: 50px;
-                        padding-right: 17px;
-                        max-height: 0;
-                        overflow: hidden;
-                        transition: all 500ms;
-                    }
-                }
-            }*/
-            
             }
         }
     }
+/*стили для страницы FAQ*/
     .faq_title{
         position: relative;   
         background-image: url('images/faq/faq_title.jpg');
@@ -1618,6 +1533,7 @@ footer{
                 }
             }
     }
+/*стили для страницы страховка*/
     .insuranse_title{
         position: relative;   
         background-image: url('images/insurance/insurance_title.jpg');
