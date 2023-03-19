@@ -1759,13 +1759,119 @@ footer{
                                     left: -121px;
                                     top: 3px;
                                     z-index: 11;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
                                 }
                             }    
                 }
                 
             }
         }
-@media (min-width:1110px){
+        .insurance_value{
+            position: relative;   
+            background-image: url('images/insurance/insurance_value2.jpg');
+            background-repeat: repeat-y;
+            max-width: 1450px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            &_background{
+                background: linear-gradient(180deg, rgb(0 0 0 / 75%) 0%, rgba(0, 0, 0, 0.75) 100%);
+                &_contain{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-items: center;
+                    box-sizing: border-box;
+                    padding: 77px 161px 111px 160px;
+                    h2{
+                        color: var(--main-tx-color);
+                        font-size: 45px;
+                        font-weight: 700;
+                        font-family: 'RW Dewi', sans-serif;
+                        letter-spacing: 1px;
+                        margin-bottom: 44px;
+                    }
+                    &_content{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 63px;
+                        justify-items: center;
+                        align-items: center;
+                        &_slider{
+                            background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+                            border: 2px solid #FFFFFF;
+                            backdrop-filter: blur(2px);
+                            border-radius: 20px;
+                            box-sizing: border-box;
+                            padding: 27px 32px 23px 42px;
+                            .slider_header{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                gap: 20px;
+                                p{
+                                    font-family: 'RF Dewi Expanded', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    color: #E9BC47;
+                                    span{
+                                        color: var(--main-tx-color);
+                                    }
+                                
+                                img{
+                                    text-align: center;
+                                    vertical-align: middle;
+                                }
+                                }
+                            }
+                            .slider_container{
+                                width: 100%;
+                                .slider {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 100%; 
+                                    height: 3px; 
+                                    background: #0000004D;
+                                    outline: none;
+                                    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+                                    transition: opacity .2s;
+                                }
+                                .slider::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: #FFFFFF; 
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                }
+                                
+                            }
+                            
+                        }
+                        &_btn{
+                           button{
+                            background: #FFFFFF;
+                            border-radius: 11px;
+                            border: 0;
+                            padding: 18px 27px;
+                            color: #000000;
+                            font-size: 18px;
+                            font-weight: 700;
+                            max-width: 315px;
+                           }
+                            
+                        }
+                    }
+                }
+            }
+        }
+@media (min-width:1111px){
     .mob_menu{
         display: none;
     }
@@ -1804,9 +1910,7 @@ footer{
     .mob_menu{
         display: none;
     }
-    .open_menu{
-        display: none;
-    }
+    
     .advantages{
         &_background{
             &_descrip{
@@ -2369,7 +2473,8 @@ footer{
     .insurance_about{  
         &_background{
            &_items{
-                gap: 63px;
+            flex-direction: column;    
+            gap: 63px;
                 padding: 52px 23px 93px 31px;
                 &_content{  
                     padding-right: 0;
@@ -2392,6 +2497,74 @@ footer{
                          
             }
             
+        }
+    }
+    .insurance_value{
+        &_background{
+            &_contain{
+                padding: 81px 31px 101px 32px;
+                h2{
+                    font-size: 30px;
+                    letter-spacing: 7px;
+                    text-align: center;
+                    margin-bottom: 21px;
+                }
+                &_content{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: 27px;
+                    &_slider{
+                        padding: 27px 22px 23px 22px;
+                        .slider_header{
+                            gap: 10px;
+                            p{
+                                font-size: 16px;
+                            
+                            img{
+                                width: 31px;
+                            }
+                            }
+                        }
+                        .slider_container{
+                            width: 100%;
+                            .slider {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 100%; 
+                                height: 3px; 
+                                background: #0000004D;
+                                outline: none;
+                                -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+                                transition: opacity .2s;
+                            }
+                            .slider::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 18px;
+                                height: 18px;
+                                background: #FFFFFF; 
+                                border-radius: 50%;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                        
+                    }
+                    &_btn{
+                       button{
+                        background: #FFFFFF;
+                        border-radius: 11px;
+                        border: 0;
+                        padding: 18px 27px;
+                        color: #000000;
+                        font-size: 18px;
+                        font-weight: 700;
+                        max-width: 315px;
+                       }
+                        
+                    }
+                }
+            }
         }
     }
 /* media желт*/} 
@@ -3001,6 +3174,77 @@ footer{
                         }    
             }
             
+        }
+    }
+    .insurance_value{
+        &_background{
+            &_contain{
+                padding: 81px 31px 101px 32px;
+                h2{
+                    font-size: 30px;
+                    letter-spacing: 7px;
+                    text-align: center;
+                    margin-bottom: 21px;
+                }
+                &_content{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: 27px;
+                    &_slider{
+                        padding: 27px 22px 23px 22px;
+                        .slider_header{
+                            gap: 10px;
+                            p{
+                                font-size: 16px;
+                                span{
+                                    display: none;
+                                }
+                            
+                            img{
+                                width: 31px;
+                            }
+                            }
+                        }
+                        .slider_container{
+                            width: 100%;
+                            .slider {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 100%; 
+                                height: 3px; 
+                                background: #0000004D;
+                                outline: none;
+                                -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+                                transition: opacity .2s;
+                            }
+                            .slider::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 18px;
+                                height: 18px;
+                                background: #FFFFFF; 
+                                border-radius: 50%;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                        
+                    }
+                    &_btn{
+                       button{
+                        background: #FFFFFF;
+                        border-radius: 11px;
+                        border: 0;
+                        padding: 18px 27px;
+                        color: #000000;
+                        font-size: 18px;
+                        font-weight: 700;
+                        max-width: 315px;
+                       }
+                        
+                    }
+                }
+            }
         }
     }
 /* media желт*/} 
