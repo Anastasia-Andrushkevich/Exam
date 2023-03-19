@@ -1793,13 +1793,18 @@ footer .footer_extra .footer_extra_documents p a:hover {
   width: 100%;
 }
 .insurance_value_background_contain_content_slider .slider_container .slider {
+  --slider-fill: #FFF;
+  --slider-bg: #0000004D;
+  --slider-progress: 0%;
+  background: linear-gradient(to right, var(--slider-fill) 0%, var(--slider-fill) var(--slider-progress), var(--slider-bg) var(--slider-progress), var(--slider-bg) 100%);
+  border-radius: 8px;
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 3px;
   background: rgba(0, 0, 0, 0.3019607843);
-  outline: none;
-  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  outline: #FFFFFF;
+  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
 .insurance_value_background_contain_content_slider .slider_container .slider::-webkit-slider-thumb {

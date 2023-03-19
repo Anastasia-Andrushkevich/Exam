@@ -1832,13 +1832,19 @@ footer{
                             .slider_container{
                                 width: 100%;
                                 .slider {
+                                    --slider-fill: #FFF;
+                                    --slider-bg: #0000004D;
+                                    --slider-progress: 0%;
+                                    
+                                    background: linear-gradient(to right, var(--slider-fill) 0%,  var(--slider-fill) var(--slider-progress), var(--slider-bg) var(--slider-progress), var(--slider-bg) 100%);
+                                    border-radius: 8px;
                                     -webkit-appearance: none;
                                     appearance: none;
                                     width: 100%; 
                                     height: 3px; 
                                     background: #0000004D;
-                                    outline: none;
-                                    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+                                    outline: #FFFFFF;
+                                    -webkit-transition: .2s;
                                     transition: opacity .2s;
                                 }
                                 .slider::-webkit-slider-thumb {

@@ -31,4 +31,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
         });
     }
+    document.getElementById("myslider").addEventListener('input', function() {
+        var value = (this.value-this.min)/(this.max-this.min)*100
+        this.style.setProperty('--slider-progress', `${value}%`);
+      });
 });    
