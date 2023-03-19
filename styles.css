@@ -10,13 +10,14 @@
   }
 }
 .iti--allow-dropdown {
-  width: 343px;
+  max-width: 343px;
+  width: 100%;
   margin-bottom: 18px;
 }
 
 @media (min-width: 375px) and (max-width: 600px) {
   .iti--allow-dropdown {
-    width: 326px;
+    max-width: 100%;
   }
 }
 * {
@@ -226,7 +227,8 @@ main .accordion_item_content {
 main .title {
   position: relative;
   background-image: url("images/main-page/title_background.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -318,7 +320,8 @@ main .title .title-background .title_content .img_chat button img {
 main .about {
   position: relative;
   background-image: url("images/main-page/backgroundimage_about2.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -452,7 +455,8 @@ main .about_items_2r .laptop img {
 main .advantages {
   position: relative;
   background-image: url("images/main-page/backgroundimage_advantages.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -554,7 +558,8 @@ main .advantages .advantages_background .advantages_descrip .advantages_descrip_
 main .reviews {
   position: relative;
   background-image: url("images/main-page/backgroundimage_reviews3.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -639,7 +644,8 @@ main .reviews_background_descrip_contain_content h5 {
 main .requirements {
   position: relative;
   background-image: url("images/main-page/backgroundimage_requirements2.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -706,6 +712,8 @@ main .requirements_background_descrip_contain_content_link {
 main .requirements_background_join {
   position: relative;
   background-image: url("images/main-page/background_join.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -815,7 +823,8 @@ main .requirements_background_map .map-container .map-here iframe {
 main .contacts {
   position: relative;
   background-image: url("images/main-page/backgroundimage_contacts2.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -998,7 +1007,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_title {
   position: relative;
   background-image: url("images/delivery/delivery_backgroundimage-title.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1094,7 +1104,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_about {
   position: relative;
   background-image: url("images/delivery/delivery_backgroundimage_about2.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1208,7 +1219,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_advantages {
   position: relative;
   background-image: url("images/delivery/delivery_backgroundimage_advantch.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1311,7 +1323,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .delivery_faq {
   position: relative;
   background-image: url("images/delivery/delivery_backgroundimage_faq3.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1339,7 +1352,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .faq_title {
   position: relative;
   background-image: url("images/faq/faq_title.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1392,7 +1406,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .faq {
   position: relative;
   background-image: url("images/faq/faq_accordion.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1498,7 +1513,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .insuranse_title {
   position: relative;
   background-image: url("images/insurance/insurance_title.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1582,7 +1598,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .insurance_about {
   position: relative;
   background-image: url("images/insurance/insurance_about.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1685,7 +1702,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .insurance_value {
   position: relative;
   background-image: url("images/insurance/insurance_value2.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1450px;
   width: 100%;
   height: auto;
@@ -1829,6 +1847,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
     position: fixed;
     top: 0;
+    right: 0;
   }
   .mob_menu_visible {
     display: flex;
@@ -2131,6 +2150,9 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .delivery_about_items_contein_content .about_items_content_btn a {
     display: none;
   }
+  .delivery_about_items .about_image {
+    flex-basis: 0;
+  }
   .delivery_about_items .about_image .background_moto {
     width: 62%;
   }
@@ -2263,6 +2285,9 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .insurance_about_background_items_content .about_items_content_btn a {
     display: none;
   }
+  .insurance_about_background_items_image {
+    flex-basis: 0;
+  }
   .insurance_value_background_contain {
     padding: 81px 31px 101px 32px;
   }
@@ -2371,7 +2396,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
   }
   main .title .title-background .title_content .img_chat {
-    padding: 8px 0px 60px 0;
+    padding: 8px 27px 100px 0;
   }
   main .title .title-background .title_content .img_chat button {
     width: 43px;
@@ -2390,6 +2415,10 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   main .about .about_items .about_items_1r {
     flex-direction: column-reverse;
+  }
+  main .about .about_items .about_items_1r .phone {
+    padding-right: 0;
+    padding-top: 66px;
   }
   main .about .about_items .about_items_1r .about_items_1r_descrip h2 {
     font-size: 33px;
@@ -2431,6 +2460,9 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   main .about .about_items .about_items_2r .about_items_2r_content .about_items_content_btn a {
     display: none;
+  }
+  main .about .about_items .about_items_2r .laptop {
+    padding-left: 0;
   }
   main .advantages .advantages_background {
     backdrop-filter: blur(6px);
@@ -2539,6 +2571,9 @@ footer .footer_extra .footer_extra_documents p a:hover {
     padding-left: 26px;
     padding-top: 0;
   }
+  main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain_img {
+    flex-basis: 0;
+  }
   main .requirements .requirements_background .requirements_background_descrip .requirements_background_descrip_contain .requirements_background_descrip_contain_content {
     padding-left: 0px;
   }
@@ -2616,7 +2651,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
   }
   .delivery_title .delivery_title-background .delivery_title_content .img_chat {
-    padding: 8px 23px 60px 0;
+    padding: 8px 23px 143px 0;
   }
   .delivery_title .delivery_title-background .delivery_title_content .img_chat button {
     width: 43px;
@@ -2648,8 +2683,18 @@ footer .footer_extra .footer_extra_documents p a:hover {
   .delivery_about_items_contein_content .about_items_content_btn a {
     display: none;
   }
+  .delivery_about_items .about_image .background_moto {
+    width: 62%;
+  }
+  .delivery_about_items .about_image .moto {
+    left: 0%;
+    top: -9%;
+    width: 70%;
+  }
   .delivery_about_items .about_image .bag {
-    top: 7%;
+    left: 37%;
+    top: 6%;
+    width: 35%;
   }
   .delivery_advantages .delivery_advantages_background {
     backdrop-filter: blur(6px);
@@ -2727,7 +2772,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   .faq_request_background .contain_content h2 {
     font-size: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
   }
   .faq_request_background .contain_content p {
     margin-top: 16px;
@@ -2751,7 +2796,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
   }
   .insuranse_title_background_content .img_chat {
-    padding: 8px 23px 135px 0;
+    padding: 48px 23px 135px 0;
   }
   .insuranse_title_background_content .img_chat button {
     width: 43px;
@@ -2780,7 +2825,8 @@ footer .footer_extra .footer_extra_documents p a:hover {
     text-align: center;
   }
   .insurance_about_background_items_content h3 {
-    font-size: 26px;
+    font-size: 20px;
+    line-height: 24px;
     padding: 23px 0px 34px 0px;
     letter-spacing: 1px;
   }
@@ -2789,7 +2835,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   .insurance_about_background_items_image {
     position: relative;
-    flex-basis: 300px;
+    flex-basis: 0px;
   }
   .insurance_about_background_items_image .background_tesla {
     display: none;
