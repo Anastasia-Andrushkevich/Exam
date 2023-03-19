@@ -220,8 +220,7 @@ main{
     max-width: 1450px;
     width: 100%;
     height: auto;
-    aspect-ratio: 1450/763;
-    /*object-fit: contain;*/
+    object-fit: contain;
 
     .title-background{  
         background: linear-gradient(180deg, rgba(30, 30, 30, 0.36) 0%,rgba(0, 0, 0, 0.36) 100%);
@@ -382,13 +381,13 @@ main{
                             padding-top: 23px;
                             letter-spacing: 1px;
                         }
-                        ul{
-                            color: var(--main-tx-color);
-                            font-size: 16px;
-                            font-family: 'RW Dewi', sans-serif;
-                            letter-spacing: 1px;
-                            list-style-type: none;
-                            li{
+                ul{
+                    color: var(--main-tx-color);
+                    font-size: 16px;
+                    font-family: 'RW Dewi', sans-serif;
+                    letter-spacing: 1px;
+                    list-style-type: none;
+                        li{
                             padding-top: 34px;
                             opacity: 0.6;
                             &::before{
@@ -1583,6 +1582,188 @@ footer{
                     }
                 }
             }
+    }
+    .insuranse_title{
+        position: relative;   
+        background-image: url('images/insurance/insurance_title.jpg');
+        background-repeat: repeat-y;
+        max-width: 1450px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    
+        &_background{  
+            background: linear-gradient(180deg, rgba(30, 30, 30, 0.45) 0%, #00000045 100%);
+                &_content{
+                    display: flex;    
+                    flex-direction: column; 
+                    box-sizing: border-box;   
+                    padding-top: 283px;    
+                    h1{
+                        color: var(--main-tx-color);
+                        font-size: var(--main-bold-size);
+                        font-weight: 700;
+                        letter-spacing: 9px;
+                        font-family: 'RF Dewi', sans-serif;
+                        text-align: center;
+                    }
+                    .title_btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 60px;
+                        margin-top: 66px;
+                        .btn_applicat{
+                            padding: 18px 29px;
+                            max-width: 260px;
+                            border: 0;
+                            font-size: 18px;
+                            font-weight: 700;
+                            background-color: #FFFFFF;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            letter-spacing: 1px;
+                            &:hover{
+                                background-color: #6e6b6bb6;
+                                color: #FFFFFF;
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            color: var(--main-tx-color);
+                            font-size: 18px;
+                            font-weight: 700;
+                            font-family: 'RF Dewi Expanded', sans-serif;
+                            letter-spacing: 1px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .img_chat{
+                        display: flex;   
+                        max-width: 1450px; 
+                        justify-content: end;
+                        padding: 77px 60px 60px 0;
+                        button{
+                            width: 83px;
+                            height: 83px;
+                            border-radius: 50%;
+                            border: 0;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                            backdrop-filter: blur(2px);
+                            &:hover{
+                                background-color: #3f3e3eda;
+                            }
+                            img{
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                        
+                    }
+                } 
+        }
+        .insurance_about{
+            position: relative;   
+            background-image: url('images/insurance/insurance_about.jpg');
+            background-repeat: repeat-y;
+            max-width: 1450px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        
+            &_background{
+                background-color: rgba(77, 74, 74, 0.85);
+                
+                &_items{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    padding: 60px 70px 50px 137px;
+                    &_content{  
+                          box-sizing: border-box;
+                          padding-right: 93px;
+                        h2{
+                            color: var(--main-tx-color);
+                            font-size: 45px;
+                            font-weight: 700;
+                            font-family: 'RW Dewi', sans-serif;
+                            letter-spacing: 1px;
+                        }
+                        h3{
+                            color: var(--main-tx-color);
+                            font-size: 26px;
+                            font-weight: 700;
+                            font-family: 'RW Dewi', sans-serif;
+                            padding: 23px 0px 34px 0px;
+                            margin-right: 0;
+                            letter-spacing: 1px;
+                            line-height: 31px;
+                            max-width: 680px;
+                        }
+                        
+                                .about_items_content_btn{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 38px;
+                                    margin-top: 42px;
+                                    align-items: center;
+                                    button{
+                                        padding: 13px 21px;
+                                        color: var(--main-tx-color);
+                                        font-size: 16px;
+                                        text-align: center;
+                                        letter-spacing: 1px;
+                                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+                                        border: 2px solid #FFFFFF;
+                                        border-image: linear-gradient(#FFFFFF, #FFFFFF00);
+                                        border-image-slice: 10;
+                                        border-radius: 20px;
+                                        &:hover{
+                                            background-color: #6e6b6bb6;
+                                            color: #FFFFFF;
+                                        }
+                                    }
+                                    a{
+                                        text-decoration: none;
+                                            color: var(--main-tx-color);
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                            font-family: 'RF Dewi Expanded', sans-serif;
+                                            letter-spacing: 1px;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                    }
+                                }      
+                            }
+                            &_image{
+                                position: relative;
+                                flex-basis: 650px;
+                                .background_tesla{
+                                    position: relative;
+                                    top: 0px;
+                                    left: 0;
+                                    z-index: 10;
+                                    max-width: 64%;
+                                    height: auto;
+                                }
+                                .tesla{
+                                    position: absolute;
+                                    max-width: 100%;
+                                    height: auto;
+                                    left: -121px;
+                                    top: 3px;
+                                    z-index: 11;
+                                }
+                            }    
+                }
+                
+            }
         }
 @media (min-width:1110px){
     .mob_menu{
@@ -1671,7 +1852,13 @@ footer{
         display: flex;
     }
         main{
-    
+            .marked_list {
+                  li{
+                     &::before{
+                        font-size: 30px;
+                     }
+                 }
+             }
             .accordion{            
                 &_item{
                     &.active{
@@ -1752,6 +1939,12 @@ footer{
                             font-size: 25px;
                             letter-spacing: 0px;
                         }
+                        ul{
+                                li{
+                                    &::before{
+                                        font-size: 30px;
+                                     }}
+                        }             
                         .about_items_content_btn{
                             display: flex;
                             flex-wrap: wrap;
@@ -2136,7 +2329,72 @@ footer{
                 }
             }
         }
-} 
+        .insuranse_title{
+            &_background{
+                &_content{        
+                    padding-top: 220px;     
+                    h1{
+                            font-size: 30px;
+                            letter-spacing: 0px;
+                        }
+                        .title_btn{
+                            margin-top: 33px;
+                            .btn_applicat{
+                                font-size: 13px;
+                                padding: 13px 11px;
+                                max-width: 176px;
+                            }
+                            a{
+                                display: none;
+                            }
+                        }
+                        .img_chat{
+                            padding: 8px 35px 135px 0;
+                        button{
+                            width: 43px;
+                            height: 43px;
+                            border-radius: 50%;
+                            border: 0;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                            backdrop-filter: blur(2px);
+                            img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                        }
+            }
+        } 
+    }
+    .insurance_about{  
+        &_background{
+           &_items{
+                gap: 63px;
+                padding: 52px 23px 93px 31px;
+                &_content{  
+                    padding-right: 0;
+                    h2{
+                        font-size: 30px;
+                        letter-spacing: 0px;
+                    }
+                    h3{
+                        font-size: 26px;
+                        padding: 23px 0px 34px 0px;
+                        letter-spacing: 1px;
+                    }
+                    
+                            .about_items_content_btn{
+                                a{
+                                    display: none;
+                                }
+                            }      
+                        }
+                         
+            }
+            
+        }
+    }
+/* media желт*/} 
 @media (min-width:375px) and (max-width:600px){
    .header{
     header{
@@ -2160,7 +2418,13 @@ footer{
     display: flex;
 }
     main{
-
+        .marked_list {
+            li{
+               &::before{
+                  font-size: 30px;
+               }
+           }
+       }
         .accordion{            
             &_item{
                 &.active{
@@ -2259,6 +2523,12 @@ footer{
                         font-size: 20px;
                         letter-spacing: 0px;
                     }
+                    ul{
+                        li{
+                            &::before{
+                                font-size: 30px;
+                             }}
+                }   
                     .about_items_content_btn{
                         display: flex;
                         flex-wrap: wrap;
@@ -2652,6 +2922,85 @@ footer{
                     }
                 }
             }
+        }
+    }
+    .insuranse_title{
+            &_background{
+                &_content{        
+                    padding-top: 220px;     
+                    h1{
+                            font-size: 25px;
+                            letter-spacing: 5px;
+                        }
+                        .title_btn{
+                            margin-top: 33px;
+                            .btn_applicat{
+                                font-size: 13px;
+                                padding: 13px 11px;
+                                max-width: 176px;
+                            }
+                            a{
+                                display: none;
+                            }
+                        }
+                        .img_chat{
+                            padding: 8px 23px 135px 0;
+                        button{
+                            width: 43px;
+                            height: 43px;
+                            border-radius: 50%;
+                            border: 0;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+                            backdrop-filter: blur(2px);
+                            img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                        }
+            }
+        } 
+    }
+    .insurance_about{  
+        &_background{
+           &_items{
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 63px;
+                padding: 52px 23px 93px 31px;
+                &_content{  
+                    padding-right: 0;
+                    h2{
+                        font-size: 30px;
+                        letter-spacing: 0px;
+                        text-align: center;
+                    }
+                    h3{
+                        font-size: 26px;
+                        padding: 23px 0px 34px 0px;
+                        letter-spacing: 1px;
+                    }
+                    
+                            .about_items_content_btn{
+                                a{
+                                    display: none;
+                                }
+                            }      
+                        }
+                        &_image{
+                            position: relative;
+                            flex-basis: 300px;
+                            .background_tesla{
+                                display: none;
+                            }
+                            .tesla{
+                                position: relative;
+                                max-width: 100%;
+                                left: -33px;
+                            }
+                        }    
+            }
+            
         }
     }
 /* media желт*/} 
