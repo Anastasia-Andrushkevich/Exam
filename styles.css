@@ -1802,7 +1802,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
   appearance: none;
   width: 100%;
   height: 3px;
-  background: rgba(0, 0, 0, 0.3019607843);
   outline: #FFFFFF;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
