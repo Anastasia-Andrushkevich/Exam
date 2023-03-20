@@ -2184,6 +2184,7 @@ footer{
                     .requirements_background_join_fond{
                         .contain{
                             flex-direction: column;
+                            flex-wrap: wrap;
                             align-items: center;
                             padding: 74px 29px;
                             .contain_content{
@@ -2834,7 +2835,7 @@ footer{
             .requirements_background_join{
                 .requirements_background_join_fond{
                     .contain{
-                        
+                        flex-wrap: wrap;
                         padding: 74px 29px;
                         .contain_content{
                             h2{

@@ -2052,6 +2052,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding: 74px 29px;
   }
@@ -2585,6 +2586,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
     display: none;
   }
   main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain {
+    flex-wrap: wrap;
     padding: 74px 29px;
   }
   main .requirements .requirements_background .requirements_background_join .requirements_background_join_fond .contain .contain_content h2 {
