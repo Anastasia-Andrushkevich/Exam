@@ -725,7 +725,6 @@ main .requirements_background_join_fond {
 main .requirements_background_join_fond .contain {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   gap: 16px;
   padding: 86px 132px;
@@ -1445,7 +1444,6 @@ footer .footer_extra .footer_extra_documents p a:hover {
 .faq_request_background .contain {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   gap: 16px;
   padding: 86px 132px;

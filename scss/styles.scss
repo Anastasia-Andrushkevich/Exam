@@ -736,7 +736,6 @@ main{
                 .contain{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
                     justify-content: space-around;
                     gap:16px;
                     padding: 86px 132px;
@@ -1479,7 +1478,7 @@ footer{
                 .contain{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
+                    
                     justify-content: space-around;
                     gap:16px;
                     padding: 86px 132px;
