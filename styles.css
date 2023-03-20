@@ -2223,6 +2223,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   .faq_request_background .contain {
     padding: 74px 24px 73px 25px;
+    flex-wrap: wrap;
   }
   .faq_request_background .contain_content h2 {
     font-size: 25px;
@@ -2769,6 +2770,7 @@ footer .footer_extra .footer_extra_documents p a:hover {
   }
   .faq_request_background .contain {
     padding: 74px 24px 73px 25px;
+    flex-wrap: wrap;
   }
   .faq_request_background .contain_content h2 {
     font-size: 20px;
